@@ -1,7 +1,5 @@
 <?php
-$background_image = get_field('background');
-if($background_image) $background_image = $background_image['url'];
-
+$background_image = get_field('background_image');
 $background_video = get_field('background_video');
 
 $classes = array();
