@@ -9,19 +9,6 @@
   ?>
 <?php get_template_part('partials/submenu/submenu', null, $args); ?>
 <?php get_template_part('partials/service-header/service-header-2'); ?>
-<?php
-    $yurika_team = get_field('yurika_team');
-    $in_brief = get_field('in_brief');
-    $key_idea = get_field('key_idea');
-    $take_aways = get_field('take_aways');
-
-    $args = array(
-      'yurika_team' => $yurika_team,
-      'in_brief' => $in_brief,
-      'key_idea' => $key_idea,
-      'take_aways' => $take_aways,
-    );
-  ?>
 
 <div class="case-study__content service__content container grid">
   <div class="service__content__content grid__col--span9">
