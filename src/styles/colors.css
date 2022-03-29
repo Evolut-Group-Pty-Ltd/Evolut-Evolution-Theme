@@ -15,7 +15,8 @@
   --secondary-half-white-color: rgba(255,255,255,0.5);
 
 
-  --primary-gradient: linear-gradient(94.44deg, var(--primary-purple-color) 0%, var(--primary-coral-color) 56%, var(--primary-orange-color) 100%);
+  --primary-gradient: linear-gradient(94.44deg, black 0%, var(--primary-purple-color) 100%);
+  /* --primary-gradient: linear-gradient(94.44deg, var(--primary-purple-color) 0%, var(--primary-coral-color) 56%, var(--primary-orange-color) 100%); */
   --primary-gradient-vert: linear-gradient(0deg, var(--primary-purple-color) 0%, var(--primary-coral-color) 56%, var(--primary-orange-color) 100%);
   --secondary-gradient: linear-gradient(94.44deg, var(--secondary-blue-color) 0%, var(--secondary-teal-color) 56%, var(--secondary-green-color) 100%);
   --grey-gradient: linear-gradient(94.44deg, #1C181F 0%, var(--secondary-dark-grey-color) 56%, var(--secondary-mid-grey-color) 100%);
