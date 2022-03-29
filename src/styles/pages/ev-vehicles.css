@@ -1,0 +1,48 @@
+.ev-vehicles__list {
+  margin-top: 60px;
+  color: var(--primary-purple-color);
+}
+
+.ev-vehicles__list-title {
+  margin-bottom: 40px;
+}
+
+.ev-vehicles__list-item {
+  margin-bottom: 40px;
+}
+
+.ev-vehicles__list-link {
+  display: block;
+  position: relative;
+  font-size: 0;
+  margin-bottom: 20px;
+}
+
+.ev-vehicles__list-link::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.ev-vehicles__list-image {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+
+.ev-vehicles__list-item-title {
+  margin-bottom: 10px;
+}
+
+.ev-vehicles__list-item-stats {
+  list-style: none;
+  padding-left: 0;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .ev-vehicles__list-title {
+    margin-bottom: 30px;
+  }
+}

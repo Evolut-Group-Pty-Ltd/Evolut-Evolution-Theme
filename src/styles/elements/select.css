@@ -1,0 +1,143 @@
+.input--select {
+  padding: 0 15px;
+}
+
+.input--select--hidden {
+  display: none !important;
+}
+
+.el-select {
+  --select-height: 3.125em;
+  --side-padding: 15px;
+  --background-color: white;
+
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  display: block;
+  padding: 0;
+  background: none;
+  border: none;
+  font-size: 16px;
+}
+
+.gfield__select--full .el-select {
+  width: 100%;
+}
+
+.el-select button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  height: var(--select-height); 
+  width: 100%;
+}
+
+.el-select::before {
+  content: attr(selected-text);
+  display: block;
+  box-sizing: border-box;
+
+  height: var(--select-height);
+  line-height: var(--select-height);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: var(--background-color);
+  padding: 0 var(--side-padding);
+
+  color: #111; 
+}
+
+.el-select::before,
+.el-select button {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.el-select--disabled::before {
+  background-color: #f5f5f5;
+  border-color: #ccc;
+}
+
+.el-select::after {
+  content: '';
+  width: 0; height: 0; 
+  position: absolute;
+  top: 50%; right: 20px;
+  transform: translateY(-50%);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+  pointer-events: none;
+}
+
+.el-select.el-select--active::after {
+  border-top: none;
+  border-bottom: 5px solid black;
+}
+
+.el-select[value=""]::before {
+  color: #999;
+}
+
+.el-select__trigger {
+  position: absolute;
+  top: 0; left: 0;
+}
+
+.el-select__search {
+  box-sizing: border-box;
+  width: 100%; height: 100%;
+  border: 0;
+  background-color: transparent;
+  padding: 0 var(--side-padding);
+}
+
+.el-select__search:focus {
+  background-color: var(--background-color);
+}
+
+.el-select__options {
+  position: absolute;
+  display: none;
+  top: calc(var(--select-height) + 8px); left: 0;
+  width: 100%;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 5px 16px rgba(0,0,0, 0.1);
+
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.el-select.el-select--active .el-select__options {
+  display: block;
+  z-index: 1;
+}
+
+.el-select__option {
+  display: block;
+  box-sizing: border-box;
+  line-height: var(--select-height);
+  padding: 0 20px;
+  text-align: left;
+}
+
+.el-select__option--hidden {
+  display: none;
+}
+
+.el-select__option:hover {
+  background-color: #f2f2f2;
+}
+
+.el-select__option:empty {
+  height: 1.25em;
+  line-height: 1.25em;
+  pointer-events: none;
+}
+
+.el-select__option:empty::before {
+  content: '---';
+}

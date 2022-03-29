@@ -1,0 +1,97 @@
+.link-cards-slider {
+  --loading-shift: 100px;
+  /*overflow: hidden;*/
+  margin-bottom: calc(var(--section-gap-size) - var(--loading-shift));
+}
+
+.link-cards-slider__title {
+  color: #111;
+  margin-bottom: 50px;
+  margin-left: calc((100% - var(--container-max-width))/2);
+}
+
+.link-cards-slider__container {
+  height: 480px;
+  padding-bottom: var(--loading-shift);
+
+  /*--item-gap: 20px;
+  --item-width: calc((100% - var(--item-gap) * 2) / 3);
+  --container-width: calc(var(--item-width) * var(--items-count) + var(--item-gap) * (var(--items-count) - 1));*/
+}
+
+/*
+.link-cards-slider__items {
+  position: absolute;
+  top: 0; left: 50%;
+
+  display: flex;
+  justify-content: space-between;
+  width: var(--container-width);
+  height: 100%;
+  transform: translateX(-50%);
+}*/
+
+.link-cards-slider__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  /*width: calc((100% - var(--item-gap) * (var(--items-count) - 1)) / var(--items-count));*/
+  padding: 40px;
+
+  background-color: var(--secondary-light-purple-color);
+  background-position: center;
+  background-size: cover;
+  color: var(--primary-purple-color);
+  user-select: none;
+  text-decoration: none;
+  -webkit-user-drag: none;
+
+  opacity: 0;
+  transform: translateY(var(--loading-shift));
+  transition: opacity 650ms ease-in-out, transform 650ms ease-in-out;
+  transition-delay: calc(300ms * (var(--nth-child-idx) - 1));
+}
+
+.visible-tag--visible .link-cards-slider__item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.link-cards-slider__item--bg,
+.link-cards-slider__item:hover {
+  background-color: var(--primary-coral-color);
+  color: white;
+}
+
+.link-cards-slider__item-icon {
+  position: absolute;
+  top: 40px; left: 40px;
+  width: 32px; height: 32px;
+}
+
+.link-cards-slider__item-title {
+  margin-bottom: 20px;
+}
+
+.link-cards-slider__item-text {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+
+.link-cards-slider__item-link {
+  display: flex;
+  color: inherit;
+}
+
+.link-cards-slider__item-link-icon {
+  width: 48px; height: 48px;
+}
+
+@media (max-width: 768px) {
+  .link-cards-slider__container {
+    height: 412px;
+  }
+}

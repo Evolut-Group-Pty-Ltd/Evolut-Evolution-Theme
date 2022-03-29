@@ -1,0 +1,23 @@
+.post__content {
+  color: #333;
+}
+
+.post__content p:first-child {
+  color: var(--primary-purple-color);
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.post-header__posted-date {
+  margin-top: 20px;
+}
+
+.service-header__sub-title ul.post-categories {
+  padding-inline-start: 0px;
+  display: flex;
+}
+
+.service-header__sub-title ul.post-categories li {
+  list-style: none;
+  margin-right: 30px;
+}

@@ -1,0 +1,22 @@
+@media (min-width: 1025px) {
+  .algolia-autocomplete {
+    box-sizing: border-box;
+    width: calc(100% - var(--padding-width) * 2) !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    max-width: var(--container-max-width);
+    padding-left: 200px;
+  }
+  
+  .aa-dropdown-menu {
+    --columns-num: 3;
+    --columns-space: 20px;
+    display: grid !important;
+    grid-template-columns: repeat(var(--columns-num), calc((100% - var(--columns-space) * (var(--columns-num) - 1)) / var(--columns-num)));
+    column-gap: var(--columns-space);
+  }
+
+  .aa-dropdown-menu > div:empty {
+    display: none;
+  }
+}

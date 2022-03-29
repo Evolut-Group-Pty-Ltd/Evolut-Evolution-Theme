@@ -1,0 +1,146 @@
+.footer {
+  margin-bottom: 50px;
+}
+
+.footer::before {
+  content: '';
+  display: block;
+  height: 6px;
+  background: var(--primary-gradient);
+
+  margin-bottom: 60px;
+}
+
+.footer__logo-row {
+  margin-bottom: 0px;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.footer__navs {
+  margin-bottom: 30px;
+}
+
+.footer__primary-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__primary-nav-item {
+  font-size: 22px;
+  line-height: 36px;
+  color: var(--primary-purple-color);
+  text-decoration: none;
+}
+
+.footer__primary-nav-item:hover,
+.footer__primary-nav-item--active {
+  color: var(--primary-coral-color);
+}
+
+.footer__secondary-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__secondary-nav-item {
+  color: #111;
+  text-decoration: none;
+}
+
+.footer__menu {
+  color: #666;
+  font-size: 14px;
+  line-height: 21px;
+  margin-left: 50px;
+}
+
+.footer__menu a {
+  color: #666;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.footer__menu  a:after {
+  content: '       ';
+  white-space: pre;
+  transition: transform 0.25s ease-out;
+}
+
+.footer__menu  a:hover:after {
+  content: ' ->';
+  white-space: pre;
+  color: var(--primary-orange-color);
+}
+
+.footer__menu__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__menu-item {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__menu-item:not(:last-child) {
+  margin-right: 70px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__social-icon {
+  border-radius: 0px;
+}
+
+.footer__social-link {
+  text-decoration: none;
+}
+
+.footer__social-link:not(:last-child) {
+  margin-right: 29px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer__logo-row {
+    grid-auto-flow: row;
+  }
+
+  .footer__primary-nav {
+    margin-bottom: 30px;
+  }
+
+  .footer__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .footer__menu {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-left: 0px;
+  }
+
+  .footer__menu-item {
+    margin-bottom: 14px;
+  }
+
+  .footer__menu-item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .footer__social {
+    justify-content: center;
+  }
+
+}

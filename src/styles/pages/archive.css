@@ -1,0 +1,121 @@
+.archive-posts-list {
+  margin-bottom: 120px;
+}
+
+.archive-filter-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+
+.archive-filter-bar.topics {
+    /* margin-bottom: 5px; */
+  }
+
+  .archive-filter-bar.tags {
+    /* margin-top: -57px;  */
+  }
+
+.archive-filter-bar__title {
+    color: var(--primary-dark-grey-color);
+    margin-right: 20px;
+    width: 150px;
+    font-size: 24px;
+}
+
+.archive-filter-bar__topics {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.archive-filter-bar__topic {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 30px;
+    color: var(--primary-purple-color);
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: var(--secondary-light-purple-color);
+}
+
+.archive-filter-bar__topic:not(:last-child) {
+  margin-right: 10px;
+}
+
+.archive-filter-bar__topic--active {
+    background-color: var(--primary-purple-color);
+    color: white;
+}
+
+.archive-filter-bar__order-select {
+  font-size: 14px;
+  line-height: 21px;
+  --select-height: 40px;
+  width: 230px;
+}
+
+@media (max-width: 768px) {
+  .archive-filter-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .archive-filter-bar__title {
+    margin-bottom: 20px;
+  }
+
+  .archive-filter-bar__topics {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    width: calc(100% + var(--padding-width));
+    padding-right: var(--padding-width);
+  }
+
+  .archive-filter-bar__topic {
+    flex-shrink: 0;
+  }
+
+  .archive-filter-bar__order,
+  .archive-filter-bar__order-select {
+    width: 100%;
+  }
+
+  .archive-posts-list {
+    margin-bottom: 60px;
+  }
+}
+
+/*----------------*/
+/* TABLET STYLING */
+/*----------------*/
+
+@media (min-width: 768px) and (max-width: 1366px) {
+  .archive-filter-bar {
+    flex-direction: column;
+  }
+
+  .archive-filter-bar__topics {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    row-gap: 5px;
+  }
+
+  .archive-filter-bar__topic {
+    height: 25px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .archive-filter-bar__topic:not(:last-child) {
+    margin-right: 5px;
+  }
+}

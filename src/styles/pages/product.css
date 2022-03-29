@@ -1,0 +1,117 @@
+.product .entry-summary {
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	background: transparent;
+	border-style: none;
+	margin-left: 50px;
+}
+
+.product_meta {
+	display: flex;
+	flex-direction: column;
+}
+
+.woocommerce div.product {
+	display: flex;
+	flex-direction: row;
+	/* min-height: 300px; */
+	margin-bottom: var(--section-gap-size);
+}
+
+.woocommerce div.product div.images {
+	margin-bottom: 0px;
+}
+
+.product__cta {
+	margin-top: 30px;
+	margin-right: 10px;
+}
+
+.woocommerce-product-gallery__image {
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+.products .post-cards__item {
+	opacity: 1;
+	/*width: 30%;
+	margin-right: 10px;*/
+	margin-top: -100px;
+	margin-bottom: 100px;
+	grid-column-end: span 4;
+}
+
+.products__container ul.products {
+	display: grid;
+	--grid-size: 12;
+	width: 100%;
+	grid-row-gap: 20px;
+	grid-column-gap: 20px;
+	grid-template-columns: repeat(var(--grid-size), 1fr);
+	width: 100%;
+}
+
+.products__container ul.products::before {
+	content: none;
+}
+
+.product__buttons {
+	display: flex;
+	flex-direction: row;
+}
+
+.product__sku {
+	margin-top: 10px;
+	font-size: 14px;
+	color: var(--primary-coral-color);
+}
+
+/* GALLERY CSS */
+
+.product__gallery {
+	width: 50%;
+	height: 500px;
+	border-radius: 6px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #dddddd;
+}
+
+.product__gallery .image-slider {
+	height: 500px;
+}
+
+.product__gallery .slider__items, .product__gallery .slider__item {
+	border-radius: 6px;
+}
+
+.product__gallery .image-slider__nav {
+	margin-bottom: 30px;
+	justify-content: center;
+}
+
+.product__gallery .slider__nav-item {
+	color: var(--primary-purple-color);
+}
+
+.product__gallery .image-slider__item {
+	background-size: contain;
+	background-position-x: center;
+	background-position-y: center;
+	background-repeat: no-repeat;
+}
+
+/* PRODUCT HEADER */
+
+.product_header .service-header__container {
+	height: calc(100% - 120px);
+}
+
+/* RESPONSIVE MOBILE STYLES */
+
+@media (max-width: 1024px) {
+	.products .post-cards__item {
+	    grid-column-end: span 12;
+	}
+}

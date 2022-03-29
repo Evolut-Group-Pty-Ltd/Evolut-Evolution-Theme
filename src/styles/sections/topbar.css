@@ -1,0 +1,118 @@
+:root {
+  --topbar-height: 30px;
+}
+
+.topbar {
+  height: var(--topbar-height);
+  /* background: var(--primary-gradient); */
+  /* background: white; */
+
+  z-index: 11;
+}
+
+.topbar--fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.topbar--sticky {
+  position: sticky;
+  top: 0;
+}
+
+/*.jetcharge-wp-section .topbar {
+  margin-top: 52px;
+}*/
+
+.topbar--overlay {
+  position: absolute;
+  width: 100%;
+  /* background: rgba(38, 38, 41, 0.3); */
+  background: rgba(38, 38, 41, 0);
+}
+
+.topbar__menu {
+  position: relative;
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.topbar__menu-item {
+  color: #333333;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.topbar--overlay .topbar__menu-item {
+  color: white;
+}
+
+.topbar__menu-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+
+.topbar__menu-children--lvl1 {
+  position: absolute;
+  top: 0; right: 0;
+  margin-top: 30px;
+  background-color: var(--secondary-dark-grey-color);
+
+  opacity: 0;
+  pointer-events: none;
+}
+
+.topbar__menu-children--lvl1:hover,
+.topbar__menu-item:hover + .topbar__menu-children--lvl1 {
+  opacity: 1;
+  pointer-events: inherit;
+}
+
+.topbar__menu-children--lvl1::before {
+  content: '';
+  display: block;
+  width: 100%; height: 5px;
+  position: absolute;
+  top: 0; left: 0;
+  transform: translateY(-100%);
+}
+
+.topbar__menu-children .topbar__menu-item {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  color: white;
+}
+
+.topbar__menu-children--lvl1 > .topbar__menu-item {
+  font-weight: bold;
+}
+
+.topbar__menu-children .topbar__menu-item:hover {
+  color: var(--primary-orange-color);
+}
+
+.topbar__menu-children--lvl2 .topbar__menu-item {
+  padding-left: 25px;
+}
+
+.topbar__menu-children .topbar__menu-children:not(:last-child),
+.topbar__menu-children .topbar__menu-item:not(:last-child) {
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+
+@media (max-width: 1024px) {
+  :root {
+    --topbar-height: 0;
+  }
+
+  .topbar {
+    display: none;
+  }
+}

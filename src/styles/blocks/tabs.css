@@ -1,0 +1,84 @@
+.tabs__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab__a {
+  text-decoration: none;
+}
+
+.tab__link {
+  background-color: rgba(90, 40, 127,0.4);
+  color: white;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 15px 30px;
+  border-style: none;
+  text-decoration: none;
+  margin-right: 3px;
+  height: 100%;
+  border-radius: 0px 0px 6px 6px;
+}
+
+.tab__link:hover {
+  background-color: var(--primary-purple-color);
+  color: white;
+  text-decoration: none;
+}
+
+.tab__link.active{
+  background-color: var(--secondary-light-purple-color);
+  color: var(--primary-dark-grey-color);
+  font-weight: 700;
+}
+
+.tab__link.active:after{
+  content: "";
+}
+
+
+.tab__content {
+  padding: 30px;
+  border-style: none;
+  /* border-color: var(--secondary-light-purple-color); */
+  background-color: var(--secondary-light-purple-color);
+  border-radius: 0px 6px 6px 6px;
+}
+
+.tab__content table {
+  color: unset;
+}
+
+.tab__image {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* TARGETING SERVICES OFFERING TABS INSTANCES */
+
+.service-offering__tabs {
+  background-color: var(--secondary-light-purple-color);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 60px 0px;
+}
+
+/* TABS FOR MOBILE */
+
+@media (max-width: 1024px) {
+  .tab__link {
+      font-size: 12px;
+      line-height: 16px;
+      padding: 10px;
+  }
+  .tab__content {
+      padding: 15px;
+      font-size: 14px;
+      line-height: 20px;
+  }
+}

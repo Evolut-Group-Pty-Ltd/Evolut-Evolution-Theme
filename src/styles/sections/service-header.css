@@ -1,0 +1,286 @@
+.service-header {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    min-height: 470px;
+    background-color: var(--secondary-light-purple-color);
+    /* background-image: url(../../images/persona-header-bg.svg); */
+    background-size: auto 100%;
+    background-position: 100% center;
+    background-repeat: no-repeat;
+    color: #111;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(0.4);
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+
+.case-study-header.service-header {
+    margin-bottom: 0px;
+}
+
+.service-header__sub-title {
+    color: rgba(255,255,255,0.3);
+    margin-bottom: 30px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.service-header__related-title {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+}
+.service-header__title {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 54px;
+}
+
+.service-header__text {
+  color: white;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@media (max-width: 768px) {
+  .service-header {
+    min-height: 472px;
+    /* background-image: url(../../images/persona-header-bg--mobile.svg); */
+    /* background-position: bottom right;
+    background-size: auto 70%; */
+  }
+
+  .service-header__text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.service-header__img-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    background-size: cover;
+    background-position: center;
+    background: var(--primary-gradient-overlay-dark);
+    filter: saturate(1.8);
+}
+
+.service-header__container {
+    height: calc(100% - 30px);
+    display: grid;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+}
+
+.service-header__links-container {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-header__column {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    padding-right: 100px;
+    justify-content: flex-end;
+}
+
+.service-header__column--related {
+    align-self: flex-end;
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: white;
+    padding-left: 50px;
+    opacity: 1;
+}
+
+.service-header__related-services {
+  padding-inline-start: 0px;
+  margin-block-end: unset;
+}
+
+.service-header__related-services li {
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+}
+
+.service-header__related-services li [aria-current]:not([aria-current="false"]) {
+    background-color: var(--primary-orange-color);
+    color: white;
+}
+
+.service-header__related-services li ul.children li.page_item a {
+  font-weight: 500;
+  list-style: disc;
+}
+
+.service-header__related-services li.page_item_has_children a {
+  font-weight: 700;
+  list-style: none;
+}
+
+.service-header__related-services a {
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-size: 12px;
+  line-height: 12px;
+  background-color: rgba(255,255,255,0.4);
+  color: white;
+  font-weight: 800;
+  transition: all ease-out 0.3s;
+  text-align: center;
+}
+
+.service-header__related-services a:hover {
+  /* text-decoration: underline; */
+  background-color: var(--primary-dark-grey-color);
+  transition: all ease-out 0.3s;
+}
+
+.service-header__related-services.children {
+    display: flex;
+    flex-direction: row;
+}
+
+.service-header__related-services.children li {
+    margin-right: 10px;
+}
+
+.service-header__link {
+    background-color: rgba(255,255,255,0.2);
+    padding: 15px 30px;
+    border-radius: 50px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+    transition: all ease-out 0.3s;
+}
+
+.service-header__link:hover{
+    background-color: rgba(90,40,127,0.8);
+    color: white;
+    transition: all ease-out 0.3s;
+}
+
+.service-header__column--links {
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+    font-size: 13px;
+    font-weight: 900;
+    color: white;
+}
+
+.related-services__header {
+    font-weight: 900;
+    font-size: 13px;
+    color: rgba(255,255,255,0.2);
+    margin-bottom: -20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+/* FEATURED DOWNLOAD */
+
+.service-header__featured-download__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+a.service-header__featured-download {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.service-header__featured-download__image {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.service-header__featured-download__meta {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+a .service-header__featured-download__title {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+a .service-header__featured-download__description {
+     text-decoration: none;
+    color: white;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+    .service-header__column {
+        width: 100%;
+        height: 440px;
+    }
+
+    .service-header__title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .service-header__sub-title {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .service-header__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media not all and (min-resolution:.001dpcm) { 
+  @supports (-webkit-appearance:none) {
+    .service-header .hero-banner-with-list__video {
+      top: 155px;
+      height: 470px;
+    }
+  }
+}
+
+@media not all and (min-resolution:.001dpcm) { 
+  @supports (-webkit-appearance:none) {
+    @media (max-width: 1023px) {
+      .service-header .hero-banner-with-list__video {
+        top: 90px;
+      }
+    }
+  }
+}

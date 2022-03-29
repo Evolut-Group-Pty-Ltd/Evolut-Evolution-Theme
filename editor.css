@@ -1,0 +1,5 @@
+/* Main column width */
+.wp-block {
+  max-width: var(--container-max-width);
+}
+

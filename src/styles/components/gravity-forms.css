@@ -1,0 +1,15 @@
+.gform_footer__comment {
+  margin-left: 24px;
+  display: inline-block;
+  color: var(--primary-red-color);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.gform--no-footer .gform_footer {
+  display: none;
+}
+
+.gform_wrapper.gravity-theme .gchoice {
+  margin-bottom: 10px;
+}

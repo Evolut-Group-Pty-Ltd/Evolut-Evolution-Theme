@@ -1,0 +1,32 @@
+.page-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.page-404__logo {
+  display: flex;
+}
+
+.page-404__logo-image {
+  width: 378px;
+  margin-bottom: 20px;
+}
+
+.page-404__title {
+  color: var(--primary-purple-color);
+  font-size: 120px;
+  line-height: 1em;
+  margin-bottom: 10px;
+}
+
+.page-404__text {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.page-404__button {
+  margin-top: 40px;
+}

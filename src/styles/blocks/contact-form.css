@@ -1,0 +1,30 @@
+.contact-form__details-title {
+  color: var(--primary-purple-color);
+  margin-bottom: 30px;
+}
+
+.contact-form__contact {
+  margin-bottom: 20px;
+}
+
+.contact-form__contact-name,
+.contact-form__hours-label {
+  color: var(--primary-orange-color);
+  margin-bottom: 10px;
+}
+
+.contact-form__contact-value {
+  color: var(--primary-purple-color);
+  text-decoration: none;
+}
+
+.contact-form__hours-value {
+  color: #666;
+  letter-spacing: -0.002em;    
+}
+
+@media (max-width: 768px) {
+  .contact-form__details {
+    margin-bottom: 55px;
+  }
+}

@@ -1,0 +1,118 @@
+.image-showcase {
+  --visible-items: 5;
+  --items-gap: 20px;
+  --current-item: 1;
+  
+  text-align: center;
+}
+
+.image-showcase__container {
+  position: relative;
+}
+
+.image-showcase__title {
+  color: #111;
+  margin-bottom: 10px;
+}
+
+/* only work when container goes right after title and there is no text */
+.image-showcase__title + .image-showcase__container {
+  margin-top: 50px;
+}
+
+.image-showcase__text {
+  margin-bottom: 40px;
+}
+
+.image-showcase__images {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.image-showcase__image:not(:hover) {
+  
+}
+
+.image-showcase__navs {
+  display: none; /* flex */
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: space-between;
+  width: 100%;
+}
+
+.image-showcase__nav {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: var(--primary-purple-color);
+  cursor: pointer;
+}
+
+.image-showcase__nav svg {
+  width: 48px; height: 48px;
+}
+
+@media (min-width: 769px) {
+  .image-showcase--scrollable .image-showcase__images {
+    width: calc(100% - 100px * 2);
+    margin: 0 auto;
+  }
+  
+  .image-showcase--scrollable .image-showcase__image-container {
+    width: calc((100% - var(--items-gap) * (var(--visible-items) - 1)) / var(--visible-items));
+    flex-shrink: 0;
+    margin-right: var(--items-gap);
+    transition: transform 300ms ease;
+    transform: translateX(calc(-1 * (100% + var(--items-gap)) * (var(--current-item) - 1)));
+  }
+  
+  .image-showcase--scrollable .image-showcase__navs {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-showcase {
+    --visible-items: 4 !important;
+    --items-gap: 10px !important;
+  }
+
+  /*.image-showcase--scrollable .image-showcase__images {
+    width: calc(100% - 20px * 2);
+  }*/
+
+  .image-showcase__nav svg {
+    width: 24px;
+  }
+
+  .image-showcase .image-showcase__images {
+    overflow-x: auto;
+  }
+
+  .image-showcase .image-showcase__image-container {
+    height: 150px;
+    flex-shrink: 0;
+  }
+
+  .image-showcase .image-showcase__image-container {
+    margin: 0 10px;
+  }
+
+  .image-showcase .image-showcase__image {
+    /*width: calc(50% - var(--item-gap) / 2);*/
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .image-showcase__image-description {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

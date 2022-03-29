@@ -1,0 +1,43 @@
+.model-search__title {
+  color: var(--primary-purple-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.model-search__select {
+  width: 100%;
+  margin-bottom: 40px;
+  --background-color: var(--secondary-light-purple-color);
+}
+
+.model-search__select::before {
+  border: 0;
+}
+
+.model-search__select::after {
+  display: block;
+  background-image: url(../../images/dropdown-arrow.svg);
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  border: 0;
+  width: 23px; height: 23px;
+  line-height: 0;
+  right: 10px;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.model-search__select.el-select--active::after {
+  background-image: url(../../images/dropdown-cross.svg);
+  border-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .model-search__select {
+    margin-bottom: 20px;
+  }
+
+  .model-search__btn {
+    width: 100%;
+  }
+}

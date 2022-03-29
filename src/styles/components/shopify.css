@@ -1,0 +1,21 @@
+.jetcharge-wp-section {
+  font-family: "proxima-nova", sans-serif;
+}
+
+.jetcharge-wp-section[data-section-name="header"] {
+  position: sticky;
+  top: 52px;
+  z-index: 10;
+}
+
+.Heading {
+  line-height: inherit;
+}
+
+.Header__CartCountContainer {
+  display: none;
+}
+
+.jetcharge-wp-section .Header__CartCountContainer {
+  display: inline;
+}

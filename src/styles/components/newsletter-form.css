@@ -1,0 +1,33 @@
+.newsletter-form {
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  padding: 40px 0;
+}
+
+.newsletter-form__title {
+  display: flex;
+  align-items: center;
+  color: var(--primary-purple-color);
+}
+
+.newsletter-form__field,
+.newsletter-form__btn {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .newsletter-form {
+    padding-bottom: 60px;  
+  }
+
+  .newsletter-form__title {
+    margin-bottom: 40px
+  }
+
+  .newsletter-form__field {
+    margin-bottom: 20px;
+  }
+
+}

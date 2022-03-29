@@ -1,0 +1,31 @@
+.search-form {
+  position: relative;
+  width: 490px;
+  max-width: 100%;
+}
+
+.search-form__input {
+  box-sizing: border-box;
+  height: 50px; width: 100%;
+  line-height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  padding: 0 20px 0 45px;
+}
+
+.search-form__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0; left: 0;
+  width: 45px; height: 100%;
+  background: transparent;
+  border: 0;
+  color: #999;
+  cursor: pointer;
+}
+
+.search-form__btn svg {
+  width: 21px; height: 21px;
+}

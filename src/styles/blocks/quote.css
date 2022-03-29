@@ -1,0 +1,24 @@
+.quote__container {
+  border-left-style: solid;
+  border-left-width: 40px;
+  border-left-color: var(--secondary-light-purple-color);
+  padding-left: 40px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.quote__content {
+  
+}
+
+.quote__author {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.quote__by-line {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 500;
+}

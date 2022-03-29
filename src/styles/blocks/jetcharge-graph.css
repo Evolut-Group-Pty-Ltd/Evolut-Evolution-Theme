@@ -1,0 +1,240 @@
+.jetcharge-graph {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.jetcharge-graph__title-col {
+  margin-bottom: -40px;
+}
+
+/* Menu */
+.jetcharge-graph__menu-col {
+  display: flex;
+  align-items: center;
+  min-width: 160px;
+}
+
+.jetcharge-graph__menu {
+  /*counter-reset: graph;*/
+}
+
+.jetcharge-graph__menu-item {
+  display: block;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: var(--primary-purple-color);
+  font-size: 20px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.jetcharge-graph__menu-item::before {
+  display: inline-block;
+  width: 32px;
+  margin-right: 11px;
+  counter-increment: graph;
+  content: "0" attr(data-target);/*counter(graph);*/
+  font-weight: 700;
+}
+
+.jetcharge-graph[data-active-item="1"] .jetcharge-graph__menu-item:nth-child(1),
+.jetcharge-graph[data-active-item="2"] .jetcharge-graph__menu-item:nth-child(2),
+.jetcharge-graph[data-active-item="3"] .jetcharge-graph__menu-item:nth-child(3),
+.jetcharge-graph[data-active-item="4"] .jetcharge-graph__menu-item:nth-child(4),
+.jetcharge-graph[data-active-item="5"] .jetcharge-graph__menu-item:nth-child(5),
+.jetcharge-graph[data-active-item="6"] .jetcharge-graph__menu-item:nth-child(6),
+.jetcharge-graph[data-active-item="7"] .jetcharge-graph__menu-item:nth-child(7),
+.jetcharge-graph[data-active-item="8"] .jetcharge-graph__menu-item:nth-child(8),
+.jetcharge-graph[data-active-item="9"] .jetcharge-graph__menu-item:nth-child(9),
+.jetcharge-graph__menu-item:hover {
+  display: block;
+  color: var(--primary-coral-color);
+}
+
+.jetcharge-graph__navs {
+  display: none;
+}
+
+/* Description */
+.jetcharge-graph__desc-col {
+  display: flex;
+  overflow: hidden;
+  min-width: 235px;
+}
+
+.jetcharge-graph__desc-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  width: 100%;
+  flex-shrink: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease;
+}
+
+.jetcharge-graph__desc-item:not(:nth-child(1)) {
+  margin-left: -100%;
+}
+
+.jetcharge-graph__desc-item-title {
+  margin-bottom: 20px;
+}
+
+.jetcharge-graph__desc-item-text {
+  max-width: 234px;
+}
+
+.jetcharge-graph__desc-item-btn {
+  margin-top: 40px;
+}
+
+.jetcharge-graph[data-active-item="1"] .jetcharge-graph__desc-item:nth-child(1),
+.jetcharge-graph[data-active-item="2"] .jetcharge-graph__desc-item:nth-child(2),
+.jetcharge-graph[data-active-item="3"] .jetcharge-graph__desc-item:nth-child(3),
+.jetcharge-graph[data-active-item="4"] .jetcharge-graph__desc-item:nth-child(4),
+.jetcharge-graph[data-active-item="5"] .jetcharge-graph__desc-item:nth-child(5),
+.jetcharge-graph[data-active-item="6"] .jetcharge-graph__desc-item:nth-child(6),
+.jetcharge-graph[data-active-item="7"] .jetcharge-graph__desc-item:nth-child(7),
+.jetcharge-graph[data-active-item="8"] .jetcharge-graph__desc-item:nth-child(8),
+.jetcharge-graph[data-active-item="9"] .jetcharge-graph__desc-item:nth-child(9) {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+/* Graph */
+.jetcharge-graph__graph-col {
+  display: flex;
+  align-items: center;
+}
+
+.jetcharge-graph__graph {
+  position: relative;
+  width: 100%;
+}
+
+.jetcharge-graph__graph::before {
+  display: block;
+  content: '';
+  padding-top: 63.7%;
+}
+
+.jetcharge-graph__graph-item {
+  position: absolute;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 300ms ease;
+  line-height: 0;
+  --item-active: 0;
+}
+
+.jetcharge-graph__img {
+  width: 100%;
+  opacity: calc(1 - var(--item-active));
+  /*transition: opacity 300ms ease;*/
+}
+
+.jetcharge-graph__img--active {
+  position: absolute;
+  top: 0; left: 0;
+  opacity: calc(var(--item-active));
+}
+
+.jetcharge-graph[data-active-item="1"] .jetcharge-graph__graph-item:nth-child(1),
+.jetcharge-graph[data-active-item="2"] .jetcharge-graph__graph-item:nth-child(2),
+.jetcharge-graph[data-active-item="3"] .jetcharge-graph__graph-item:nth-child(3),
+.jetcharge-graph[data-active-item="4"] .jetcharge-graph__graph-item:nth-child(4),
+.jetcharge-graph[data-active-item="5"] .jetcharge-graph__graph-item:nth-child(5),
+.jetcharge-graph[data-active-item="6"] .jetcharge-graph__graph-item:nth-child(6),
+.jetcharge-graph[data-active-item="7"] .jetcharge-graph__graph-item:nth-child(7),
+.jetcharge-graph[data-active-item="8"] .jetcharge-graph__graph-item:nth-child(8),
+.jetcharge-graph[data-active-item="9"] .jetcharge-graph__graph-item:nth-child(9),
+.jetcharge-graph__graph-item:hover {
+  --item-active: 1;
+}
+
+.jetcharge-graph[data-active-item="1"] .jetcharge-graph__graph-item:nth-child(1),
+.jetcharge-graph[data-active-item="2"] .jetcharge-graph__graph-item:nth-child(2),
+.jetcharge-graph[data-active-item="3"] .jetcharge-graph__graph-item:nth-child(3),
+.jetcharge-graph[data-active-item="4"] .jetcharge-graph__graph-item:nth-child(4),
+.jetcharge-graph[data-active-item="5"] .jetcharge-graph__graph-item:nth-child(5),
+.jetcharge-graph[data-active-item="6"] .jetcharge-graph__graph-item:nth-child(6),
+.jetcharge-graph[data-active-item="7"] .jetcharge-graph__graph-item:nth-child(7),
+.jetcharge-graph[data-active-item="8"] .jetcharge-graph__graph-item:nth-child(8),
+.jetcharge-graph[data-active-item="9"] .jetcharge-graph__graph-item:nth-child(9) {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .jetcharge-graph {
+    height: auto;
+    padding: 60px 0;
+  }
+  
+  .jetcharge-graph__title {
+    text-align: center;
+  }
+
+  .jetcharge-graph__title-col {
+    margin-bottom: 5px;
+  }
+
+  .jetcharge-graph__menu-col {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .jetcharge-graph__menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .jetcharge-graph__menu-item {
+    display: none;
+  }
+
+  .jetcharge-graph__navs {
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%; 
+    justify-content: space-between;
+  }
+
+  .jetcharge-graph__nav {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    line-height: 0;
+  }
+
+  .jetcharge-graph__nav svg {
+    width: 48px; height: 48px;
+  }
+
+  .jetcharge-graph__graph-col {
+    margin-bottom: 20px;
+  }
+
+  .jetcharge-graph__desc-item {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .jetcharge-graph__desc-item-text {
+    max-width: none;
+  }
+
+  .jetcharge-graph__desc-item-btn {
+    margin-top: 20px;
+    width: 100%;
+  }
+}

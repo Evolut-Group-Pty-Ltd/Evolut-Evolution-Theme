@@ -1,0 +1,27 @@
+.image-columns__title {
+  margin-bottom: 40px;
+}
+
+.image-columns__container {
+  row-gap: 40px;
+}
+
+.image-columns__item-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.image-columns__item-image {
+  max-height: 160px;
+}
+
+.image-columns__item-title {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1023px) {
+  .image-columns__item-image {
+    max-height: 70px;
+  }
+}

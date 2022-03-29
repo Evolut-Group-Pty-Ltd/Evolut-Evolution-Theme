@@ -1,0 +1,40 @@
+.service__content {
+    color: #333;
+    padding: 0px 0px;
+}
+.service__content p:first-child {
+    color: var(--secondary-dark-grey-color);
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.service__content__content {
+  margin-right: 50px;
+}
+
+.service__content__col .container {
+    margin-top: 30px;
+}
+
+.service__content__content .container {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.service__content__content .post-cards {
+    margin-top: 60px;
+}
+
+.service__content__content .post-cards__title {
+  margin-left: 0px;
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.summary.service {
+    margin-top: 0px;
+}

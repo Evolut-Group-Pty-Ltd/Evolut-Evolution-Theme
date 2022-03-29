@@ -1,0 +1,111 @@
+.block {
+  /* --loading-shift: 100px; */
+  margin-bottom: calc(var(--section-gap-size) - var(--loading-shift));
+  display: flex;
+  flex-direction: column;
+}
+.text-with-image-section.block {
+  /* --loading-shift: 100px;
+  margin-bottom: var(--section-gap-size); */
+}
+
+.block__grid {
+  row-gap: 20px;
+}
+
+.block__container--draggable {
+  height: 545px;
+}
+
+.block__wrapper-meta {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.block__wrapper-meta.align--center {
+  text-align: center;
+}
+
+.block__wrapper-meta.align--right {
+  text-align: right;
+}
+
+.block__heading-tag {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--primary-orange-color);
+}
+
+.block__title {
+  /* text-align: left; */
+  margin-top: 20px;
+  margin-bottom: 30px;
+  /* color: #111; */
+  /* padding-right: 20%; */
+}
+
+.block__sub-heading {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 500;
+  color: var(--primary-dark-grey-color);
+  margin-bottom: 30px;
+  margin-top: -20px;
+}
+
+.block__description {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: -20px;
+}
+
+.block__links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  z-index: 0;
+}
+
+.block__link {
+  padding: 20px 40px;
+  /* background-color: rgba(255,255,255,0.3);
+  color: white; */
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 800;
+  /* text-decoration: none;
+  border-radius: 50px; */
+  align-self: start;
+  /* transition: all 0.3s ease-out; */
+  /* border-style: solid;
+  border-width: 2px; */
+}
+
+/* .block__link:hover {
+  background-color: var(--primary-purple-color);
+  transition: all 0.3s ease-out;
+} */
+
+@media (max-width: 768px) {
+  .block__container {
+    height: 510px;
+  }
+}
+
+/* FEATURED SECTION TO REMOVE MARGIN UNDER HEADER */
+
+#featured {
+  margin-top: -60px;
+}
+
+/* INTRO PARAGRAPH/DESCRIPTION */
+
+.block__description hr {
+  break-after: column;
+  opacity: 0;
+}

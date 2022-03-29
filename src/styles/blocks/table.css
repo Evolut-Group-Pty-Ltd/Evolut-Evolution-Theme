@@ -1,0 +1,36 @@
+.table__table {
+	width: 100%;
+}
+
+.table__caption {
+
+}
+
+.table__thead {
+	background-color: var(--primary-purple-color);
+	color: white;
+}
+
+.table__tr {
+	padding: 10px;
+}
+
+.table__th {
+	padding: 10px 20px;
+}
+
+.table__tbody {
+
+}
+
+.table__td {
+	padding: 10px 20px;
+	background-color: var(--secondary-light-purple-color);
+	font-weight: 500;
+}
+
+/* Add bespoke icons to specific table headers */
+
+.table__th.CAPABILITY::before {
+	/* content: 'ICON GOES HERE'; */
+}
