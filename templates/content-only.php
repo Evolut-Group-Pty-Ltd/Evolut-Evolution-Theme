@@ -1,4 +1,7 @@
-<?php /* Template Name: Content Only */ ?>
+<?php /* 
+Template Name: Content Only
+Template Post Type: page, service, proposals
+ */ ?>
 <?php get_template_part('partials/header/header', null, array(
   'sticky' => false
 )); ?>
