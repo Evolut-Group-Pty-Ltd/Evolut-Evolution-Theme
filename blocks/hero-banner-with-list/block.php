@@ -1,12 +1,13 @@
 <?php
 $background_image = get_field('background_image');
 $background_video = get_field('background_video');
+$bg_image_settings = get_field('bg_image_settings');
 
 $classes = array();
 if(get_field('background_shadow_overlay')) $classes[] = 'hero-banner-with-list--shadow-overlay';
 if(!empty($block['className'])) $classes[] = $block['className'];
 ?>
-<section class="hero-banner-with-list section <?php echo implode(' ', $classes) ?>" <?php echo $background_image ? sprintf('style="background-image: url(%s);"', $background_image) : '' ?>>
+<section class="hero-banner-with-list section <?php echo implode(' ', $classes) ?>" <?php echo $background_image ? sprintf('style="background-image: url(%s); %s"', $background_image, $bg_image_settings) : '' ?>>
   <?php if($background_video): ?>
   <video class="hero-banner-with-list__video" playsinline autoplay muted loop>
       <source src="<?php echo $background_video ?>" type="video/mp4">
@@ -22,12 +23,10 @@ if(!empty($block['className'])) $classes[] = $block['className'];
         <?php while(have_rows('list')): the_row(); ?>
         <a class="hero-banner-with-list__list-item" href="<?php the_sub_field('link_url') ?>">
           <?php the_sub_field('link_text') ?>
-          <!-- <i class="hero-banner-with-list__list-icon" data-feather="arrow-right"></i> -->
         </a>
         <?php endwhile; ?>
       </nav>
     </div>
   </div>
-<!--  <img class="hero-banner-with-list__corner" src="<?php echo get_stylesheet_directory_uri() ?>/src/images/hero-hex-corner.svg"> -->
   <a class="hero-banner-with-list__btn scroll-to" href="<?php the_field('scroll_to_target') ?>" data-target="<?php the_field('scroll_to_target') ?>"><i data-feather="arrow-down" aria-label="Scroll Down"></i></a>
 </section>
