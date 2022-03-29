@@ -16,7 +16,9 @@ if(!empty($block['className'])) $classes[] = $block['className'];
 ?>
 <section class="hero-banner-with-list section <?php echo implode(' ', $classes) ?>" <?php echo $background_image ? sprintf('style="background-image: url(%s);"', $background_image) : '' ?>>
   <?php if($background_video): ?>
-  <?php echo smart_video($background_video, $video_options, null) ?>
+  <div class="video__container swarmify__video container block">
+    <smartvideo src="<?php echo $video ?>" width="1280" height="720" class="swarm-fluid" controls=""<?php echo $video_options_string; ?>></smartvideo>
+  </div>
   <?php endif; ?>
   <div class="hero-banner-with-list__grid container grid">
     <div class="hero-banner-with-list__container grid__col--span8">
