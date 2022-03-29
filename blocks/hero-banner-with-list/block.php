@@ -7,11 +7,14 @@ $classes = array();
 if(get_field('background_shadow_overlay')) $classes[] = 'hero-banner-with-list--shadow-overlay';
 if(!empty($block['className'])) $classes[] = $block['className'];
 ?>
-<section class="hero-banner-with-list section <?php echo implode(' ', $classes) ?>" <?php echo $background_image ? sprintf('style="background-image: url(%s); %s"', $background_image, $bg_image_settings) : '' ?>>
+<section class="hero-banner-with-list section <?php echo implode(' ', $classes) ?>">
   <?php if($background_video): ?>
   <video class="hero-banner-with-list__video" playsinline autoplay muted loop>
       <source src="<?php echo $background_video ?>" type="video/mp4">
   </video>
+<?php else : ?>
+  <div class="hero-banner-with-list__video" <?php echo $background_image ? sprintf('style="background-image: url(%s); %s"', $background_image, $bg_image_settings) : '' ?>>
+  </div>
   <?php endif; ?>
   <div class="hero-banner-with-list__grid container grid">
     <div class="hero-banner-with-list__container grid__col--span8">
