@@ -4,7 +4,7 @@ $sticky = array_key_exists('sticky', $args) ? $args['sticky'] : true;
 $topbar_args = array_key_exists('topbar_args', $args) ? $args['topbar_args'] : array();
 $topbar_args['sticky'] = $sticky;
 
-get_template_part('partials/topbar/topbar', null, $topbar_args);
+//get_template_part('partials/topbar/topbar', null, $topbar_args);
 
 global $ev_models;
 $ev_models = get_posts(array(
