@@ -23,8 +23,8 @@ if($is_overlay) $classes[] = 'header--overlay';
 <header class="header <?php echo implode(' ', $classes) ?>">
   <div class="header__container container">
     <a class="header__logo" href="/">
-      <img class="header__logo-img header__logo-img--white" src="<?php echo get_stylesheet_directory_uri() ?>/src/images/Yurika-White-Web.svg" alt="<?php echo get_bloginfo('name') ?>">
-      <img class="header__logo-img header__logo-img--dark" src="<?php echo get_stylesheet_directory_uri() ?>/src/images/Yurika-Colour-BlkStrap-Web.svg" alt="<?php echo get_bloginfo('name') ?>">
+      <img class="header__logo-img header__logo-img--white" src="<?php the_field('logo_white', 'option'); ?>" alt="<?php echo get_bloginfo('name') ?>">
+      <img class="header__logo-img header__logo-img--dark" src="<?php the_field('logo', 'option'); ?>" alt="<?php echo get_bloginfo('name') ?>">
     </a>
     <nav class="header__menu">
       <?php render_menu('primary', 'header__menu', '-'); ?>
