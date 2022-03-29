@@ -7,7 +7,7 @@ $classes = array();
 if(get_field('background_shadow_overlay')) $classes[] = 'hero-banner-with-list--shadow-overlay';
 if(!empty($block['className'])) $classes[] = $block['className'];
 ?>
-<section class="hero-banner-with-list section <?php echo implode(' ', $classes) ?>">
+<section class="hero-banner-with-list section margin--bottom-none <?php echo implode(' ', $classes) ?>">
   <?php if($background_video): ?>
   <video class="hero-banner-with-list__video" playsinline autoplay muted loop>
       <source src="<?php echo $background_video ?>" type="video/mp4">
