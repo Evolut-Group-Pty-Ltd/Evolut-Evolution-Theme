@@ -20,7 +20,7 @@ if(array_key_exists('class', $args)) {
 $is_overlay = get_field('overlay_header_over_content');
 if($is_overlay) $classes[] = 'header--overlay';
 
-$logo_height = get_field("$logo_height");
+$logo_height = get_field('logo_height', 'option');
 ?>
 <header class="header <?php echo implode(' ', $classes) ?>">
   <div class="header__container container">
