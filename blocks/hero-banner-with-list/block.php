@@ -4,19 +4,15 @@ if($background_image) $background_image = $background_image['url'];
 
 $background_video = get_field('background_video');
 
-$autoplay = " autoplay";
-$controls = "";
-$loop = " loop";
-$muted = " muted";
-$video_options_string = $autoplay . $controls . $loop . $muted;
-
 $classes = array();
 if(get_field('background_shadow_overlay')) $classes[] = 'hero-banner-with-list--shadow-overlay';
 if(!empty($block['className'])) $classes[] = $block['className'];
 ?>
 <section class="hero-banner-with-list section <?php echo implode(' ', $classes) ?>" <?php echo $background_image ? sprintf('style="background-image: url(%s);"', $background_image) : '' ?>>
   <?php if($background_video): ?>
-    <smartvideo src="<?php echo $video ?>" width="1280" height="720" class="swarm-fluid" controls=""<?php echo $video_options_string; ?>></smartvideo>
+  <video class="hero-banner-with-list__video" playsinline autoplay muted loop>
+      <source src="<?php echo $background_video ?>" type="video/mp4">
+  </video>
   <?php endif; ?>
   <div class="hero-banner-with-list__grid container grid">
     <div class="hero-banner-with-list__container grid__col--span8">
