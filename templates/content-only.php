@@ -1,6 +1,6 @@
 <?php /* 
 Template Name: Content Only
-Template Post Type: page, service, proposals
+Template Post Type: page, service, proposals, contracts
  */ ?>
 <?php get_template_part('partials/header/header', null, array(
   'sticky' => false
