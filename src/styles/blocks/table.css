@@ -25,8 +25,8 @@
 
 .table__td {
 	padding: 10px 20px;
-	background-color: var(--primary-dark-grey-color);
-	color: var(--secondary-mid-grey-color);
+	background-color: var(--secondary-dark-grey-color);
+	color: var(--secondary-light-grey-color);
 	font-weight: 500;
 }
 
