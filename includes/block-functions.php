@@ -5,18 +5,14 @@ function get_colour($acf_field, $block_colours) {
     // Set array of color classes (for block editor) and hex codes (from ACF)
   $wd_block_colors = [
      // Change these to match your color class (gutenberg) and hex codes (acf)
-       "purple"       => "#5a287f",
-       "orange"       => "#db8e33",
-       "coral"        => "#cf5f65",
-       "dark-grey"    => "#1a0826",
-       "light-purple" => "#f7f4f8",
-       "blue"         => "#2a4a96",
-       "teal"         => "#0e7187",
-       "green"        => "#7bb26a",
+       "purple"       => "#711ecf",
+       "orange"       => "#00aeef",
+       "coral"        => "#e235e5",
+       "dark-grey"    => "#191b1c",
        "black"        => "#000000",
        "white"        => "#ffffff",
        "grey-light"   => "#f7f7f7",
-       "half-white"   => "rgba(255, 255, 255, 0.5)",
+       "grey"         => "#999999",
 
   ];
   //$block_colours = get_field("block_colours");

@@ -1,10 +1,10 @@
 :root {
-  --primary-coral-color: #CF5F65;
-  --primary-orange-color: #DB8E33;
-  --primary-purple-color: #5A287F;
+  --primary-coral-color: #E235E5; /* pink */
+  --primary-orange-color: #00AEEF; /* cyan */
+  --primary-purple-color: #711ECF; /* purple */
   --primary-purple-color-transparent: rgba(90, 40, 127,0.8);
-  --primary-red-color: #ED1C24;
-  --primary-dark-grey-color: #1A0826;
+  --primary-red-color: #E235E5; /* pink */
+  --primary-dark-grey-color: #191B1C; /* dark grey */
 
   --secondary-dark-grey-color:#261e2c;
   --secondary-mid-grey-color: #433A49;
@@ -15,7 +15,7 @@
   --secondary-half-white-color: rgba(255,255,255,0.5);
 
 
-  --primary-gradient: linear-gradient(94.44deg, black 0%, var(--primary-purple-color) 100%);
+  --primary-gradient: linear-gradient(94.44deg, var(--primary-orange-color) 0%, var(--primary-purple-color) 100%);
   /* --primary-gradient: linear-gradient(94.44deg, var(--primary-purple-color) 0%, var(--primary-coral-color) 56%, var(--primary-orange-color) 100%); */
   --primary-gradient-vert: linear-gradient(0deg, var(--primary-purple-color) 0%, var(--primary-coral-color) 56%, var(--primary-orange-color) 100%);
   --secondary-gradient: linear-gradient(94.44deg, var(--secondary-blue-color) 0%, var(--secondary-teal-color) 56%, var(--secondary-green-color) 100%);
