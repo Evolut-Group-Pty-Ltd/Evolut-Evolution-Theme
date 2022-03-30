@@ -415,14 +415,20 @@
 /* POST CARD TAGS */
 
 .post-cards__tag {
-  font-size: 9px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.post-cards__tag {
+  font-size: 10px;
+  line-height: 12px;
   text-transform: uppercase;
-  background-color: var(--primary-orange-colour);
+  background-color: var(--primary-orange-color);
   color: var(--primary-dark-grey-color);
-  padding: 10px 25px;
-  height: 25px;
+  padding: 5px 10px;
   margin-right: 5px;
   margin-bottom: 5px;
+  border-radius: 15px;
 }
 
 /* FLICKITY SUPPORT */
