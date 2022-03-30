@@ -55,7 +55,7 @@
 .post-cards__item {
     display: flex;
     flex-direction: column;
-    background-color: var(--secondary-light-purple-color);
+    background-color: var(--secondary-dark-grey-color);
     user-select: none;
     -webkit-user-drag: none;
     opacity: 0;
@@ -155,7 +155,7 @@
 
 .post-cards__item-title {
   margin-bottom: 10px;
-  color: var(--primary-purple-color);
+  color: white;
 }
 
 .post-cards__item.list-item .post-cards__item-title {
@@ -236,7 +236,7 @@
 
 .post-cards__item-link svg {
   width: 48px; height: 48px;
-  color: var(--primary-purple-color);
+  color: var(--primary-orange-color);
   stroke-width: 1;
   margin-top: 10px;
 }
