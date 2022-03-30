@@ -21,7 +21,7 @@ function get_colour($acf_field, $block_colours) {
   if($block_colours[$acf_field]) :
     $colour = $block_colours[$acf_field];
     foreach( $wd_block_colors as $key => $value ) {
-         if( $colour == $value ) {
+         if( strtolower($colour) == strtolower($value) ) {
               $class_colour = $key;
          }
     }
