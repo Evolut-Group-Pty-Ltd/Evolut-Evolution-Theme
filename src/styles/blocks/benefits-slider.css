@@ -45,6 +45,15 @@ a.benefits__list-item--active {
 	color: var(--primary-orange-color);
 }
 
+.benefits__list-item-title {
+	display: flex;
+	align-items: center;
+}
+
+.benefits__icon {
+	margin-right: 10px;
+}
+
 .benefits__views {
 	width: calc(100% - 320px);
 	display: flex;
