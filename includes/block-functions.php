@@ -13,6 +13,7 @@ function get_colour($acf_field, $block_colours) {
        "white"        => "#ffffff",
        "grey-light"   => "#f7f7f7",
        "grey"         => "#999999",
+       "teal"         => "#666666",
 
   ];
   //$block_colours = get_field("block_colours");

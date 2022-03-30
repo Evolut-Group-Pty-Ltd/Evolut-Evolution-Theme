@@ -7,11 +7,11 @@
   --primary-dark-grey-color: #191B1C; /* dark grey */
 
   --secondary-dark-grey-color: #1F2122;
-  --secondary-mid-grey-color: #999999;
+  --secondary-mid-grey-color: #666666;
   --secondary-light-grey-color: #999999;
-  --secondary-light-purple-color: #F7F4F8;
+  --secondary-light-purple-color: #999999; / * light grey */
   --secondary-blue-color: #2A4A96;
-  --secondary-teal-color: #0E7187;
+  --secondary-teal-color: #666666; /* medium grey */
   --secondary-green-color: #7BB26A;
   --secondary-half-white-color: rgba(255,255,255,0.5);
 
