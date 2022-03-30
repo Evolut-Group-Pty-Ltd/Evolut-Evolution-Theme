@@ -33,6 +33,9 @@ $block_id = __( $args['block_id'] );
       <?php endif; ?>
       </div>
       <div class="benefits__related" style="background-image: url(<?php echo $benefit["image"]; ?>); background-position: center; background-size: cover;">
+        <?php if($video): ?>
+          <?php echo smart_video($video, null, null) ?>
+        <?php endif; ?>
           <div class="benefits__related-content">
             <?php $related_content = $benefit["related_content"];
             if($related_content) : ?>
