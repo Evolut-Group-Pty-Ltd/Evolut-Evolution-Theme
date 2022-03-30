@@ -7,7 +7,7 @@
 }
 
 .table__thead {
-	background-color: var(--primary-purple-color);
+	background-color: var(--primary-orange-color);
 	color: white;
 }
 
@@ -25,7 +25,8 @@
 
 .table__td {
 	padding: 10px 20px;
-	background-color: var(--secondary-light-purple-color);
+	background-color: var(--primary-dark-grey-color);
+	color: var(--secondary-mid-grey-color);
 	font-weight: 500;
 }
 
