@@ -1,6 +1,7 @@
 <?php
 $social_media = get_field('social_media', 'option');
 $common_text = get_field('common_text', 'option');
+$logo_height = get_field('logo_height', 'option');
 ?>
 </main>
 <footer class="footer">
