@@ -47,9 +47,9 @@ endif;
       <?php foreach($posts as $post):
         if(get_field("deliverable_bullets", $post)) :
           $bullets = get_field("deliverable_bullets", $post);
-          $tags = [];
+          $tags = array();
           foreach($bullets as $bullet) :
-            array_push($tags, ["tag_title" => $bullet['deliverable_bullet_title'], "tag_link" => $bullet['deliverable_bullet_link']];
+            //array_push($tags, ["tag_title" => $bullet['deliverable_bullet_title'], "tag_link" => $bullet['deliverable_bullet_link']];
           endforeach;
         endif;
       get_template_part('elements/post-card/' . $card_type, null, array(
