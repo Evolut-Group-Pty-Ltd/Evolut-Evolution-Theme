@@ -12,7 +12,7 @@ $block_unique_id = get_field('block_unique_id');
   <div class="posts-preview__views container">
     <?php foreach($selected_posts as $idx => $post): ?>
     <div class="posts-preview__view grid <?php echo $idx === 0 ? 'posts-preview__view--active' : '' ?>">
-      <div class="posts-preview__meta grid__col--span5">
+      <div class="posts-preview__meta grid__col--span4">
         <div class="posts-preview__content">
           <h6 class="posts-preview__meta-type text--caps14"<?php if($heading_tag_colour) : ?> style="color: <?php echo $heading_tag_colour ?>;"<?php endif; ?>><?php echo $heading; ?></h6>
           <h1 class="posts-preview__meta-title heading--display"<?php if($title_colour) : ?> style="color: <?php echo $title_colour ?>;"<?php endif; ?>><?php echo get_the_title($post) ?></h1>
@@ -42,7 +42,7 @@ $block_unique_id = get_field('block_unique_id');
           <source src="<?php echo get_field("featured_case_study_video", $post); ?>" type="video/mp4">
       </video>
     <?php else : ?>
-      <a class="posts-preview__image-container grid__col--span6" href="<?php echo get_the_permalink($post) ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post) ?>');">
+      <a class="posts-preview__image-container grid__col--span7" href="<?php echo get_the_permalink($post) ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post) ?>');">
       </a>
       <?php endif; ?>
     </div>
