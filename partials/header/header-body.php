@@ -26,7 +26,7 @@ $logo_height = get_field('logo_height', 'option');
   <div class="header__container container">
     <a class="header__logo" href="/">
       <img class="header__logo-img header__logo-img--white" src="<?php the_field('logo_white', 'option'); ?>" alt="<?php echo get_bloginfo('name') ?>" <?php echo $logo_height ? sprintf('style="height: %spx;"', $logo_height) : '' ?>>
-      <img class="header__logo-img header__logo-img--dark" src="<?php the_field('logo', 'option'); ?>" alt="<?php echo get_bloginfo('name') ?>">
+      <img class="header__logo-img header__logo-img--dark" src="<?php the_field('logo', 'option'); ?>" alt="<?php echo get_bloginfo('name') ?>" <?php echo $logo_height ? sprintf('style="height: %spx;"', $logo_height) : '' ?>>
     </a>
     <nav class="header__menu">
       <?php render_menu('primary', 'header__menu', '-'); ?>
