@@ -414,7 +414,7 @@
 
 /* POST CARD TAGS */
 
-.post-cards__tag {
+.post-cards__tags {
   display: inline-flex;
   flex-wrap: wrap;
 }
@@ -429,6 +429,7 @@
   margin-right: 5px;
   margin-bottom: 5px;
   border-radius: 15px;
+  font-weight: 700;
 }
 
 /* FLICKITY SUPPORT */
