@@ -39,7 +39,7 @@ $block_unique_id = get_field('block_unique_id');
       <div class="grid__col--span1"></div>
       <?php if(get_field("bg_video", $post)) : ?>
       <video class="posts-preview__video grid__col--span6" playsinline autoplay muted loop>
-          <source src="<?php echo get_field("bg_video", $post); ?>" type="video/mp4">
+          <source src="<?php echo get_field("featured_case_study_video", $post); ?>" type="video/mp4">
       </video>
     <?php else : ?>
       <a class="posts-preview__image-container grid__col--span6" href="<?php echo get_the_permalink($post) ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post) ?>');">

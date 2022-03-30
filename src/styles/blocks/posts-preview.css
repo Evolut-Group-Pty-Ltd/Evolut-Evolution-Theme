@@ -100,7 +100,7 @@ transition: background ease-out .3s;
 }
 
 .posts-preview__list-item-title:hover {
-  color: var(--primary-purple-color);
+  color: white;
 }
 
 .posts-preview__list-item--active .posts-preview__list-item-title {
