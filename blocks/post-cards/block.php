@@ -8,6 +8,7 @@ get_template_part('blocks/post-cards/partial', null, array(
   'card_width' => get_field('card_width'),
   'card_spacing' => get_field('card_spacing'),
   'card_align' => get_field('card_align'),
+  'image_align' => get_field('image_align'),
   'card_colours' => get_field('card_colours'),
   'auto_rotation' => get_field('auto_rotation'),
   'show_date' => get_field('show_date'),

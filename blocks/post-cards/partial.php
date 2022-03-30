@@ -5,6 +5,7 @@ $variant = __( $args['variant'] );
 $card_width = __( $args['card_width'] );
 $card_spacing = __( $args['card_spacing'] );
 $card_align = __( $args['card_align'] );
+$image_align = __( $args['image_align'] );
 $card_type = __( $args['card_type'] );
 $card_colours = __( $args['card_colours'] );
 $auto_rotation = $args['auto_rotation'];
@@ -54,6 +55,7 @@ endif;
         'card_colours' => $card_colours,
         'show_date' => __( $args['show_date'] ),
         'date' => get_the_date('jS M Y', $post->ID),
+        'image_align' => $image_align,
       ));
       ?> 
       <?php endforeach; ?>

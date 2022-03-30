@@ -8,6 +8,7 @@ get_template_part('blocks/content-cards/partial', null, array(
   'card_width' => get_field('card_width'),
   'card_spacing' => get_field('card_spacing'),
   'card_align' => get_field('card_align'),
+  'image_align' => get_field('image_align'),
   'card_colours' => get_field('card_colours'),
   'icon_colour' => get_field('icon_colour'),
   'text_colour' => get_field('text_colour'),

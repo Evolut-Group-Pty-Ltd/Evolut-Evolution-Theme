@@ -17,7 +17,7 @@ global $post;
       <source src="<?php echo $background_video ?>" type="video/mp4">
   </video>-->
   <?php else : ?>
-  <div class="post-cards__item-image" style="background-image: url(<?php echo $args['image_url'] ?>); "><?php echo $args['title'] ?></div>
+  <div class="post-cards__item-image" style="background-image: url(<?php echo $args['image_url'] ?>); <?php if($args['image_align']) : ?>background-position: <?php echo $args['image_align'] ?>;<?php endif; ?>"><?php echo $args['title'] ?></div>
   <?php endif; ?>
   <div class="post-cards__item-content">
     <?php if(__($args['show_date'])) : ?><div class="post-cards__date"><?php echo $date; ?></div><?php endif; ?>
