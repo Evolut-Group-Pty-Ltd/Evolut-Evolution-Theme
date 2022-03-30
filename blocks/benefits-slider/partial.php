@@ -8,7 +8,7 @@ $block_id = __( $args['block_id'] );
   <div class="benefits__nav">
   <?php foreach($benefits as $idx => $benefit): ?>
     <a class="tab__a-<?php echo $block_id ?> benefits__list-item <?php echo $idx === 0 ? 'benefits__list-item--active' : '' ?>" href="javascript:void(0)" onclick="<?php echo $block_id ?>_OpenTab(event, 'tab-<?php echo $block_id ?>-<?php echo $idx; ?>')">
-      <div class="benefits__list-item-title tab__link-<?php echo $block_id ?>"><?php echo $benefit["title"]; ?></div>
+      <div class="benefits__list-item-title tab__link-<?php echo $block_id ?>"><?php echo $benefit['icon'] ? sprintf('<img src="%s">', $benefit['icon']) : '' ?><?php echo $benefit["title"]; ?></div>
     </a>
     <?php endforeach; ?>
   </div>
