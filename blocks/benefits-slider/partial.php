@@ -20,15 +20,17 @@ $block_id = __( $args['block_id'] );
           <h1 class="benefits__meta-title heading--display"><?php echo $benefit["title"]; ?></h1>
           <div class="benefits__meta-description"><?php echo $benefit["description"]; ?></div>
         </div> 
+        <?php $stats = $benefit["statistics"];
+        if($stats) : ?>
         <div class="benefits__stats">
-          <?php $stats = $benefit["statistics"];
-          foreach($stats as $stat): ?>
+          <?php foreach($stats as $stat): ?>
           <div class="benefits__stats-item">
             <img class="benefits__stats-image" src="<?php echo $stat["icon"]; ?>">
             <div class="benefits__stats-text"><?php echo $stat["title"]; ?></div>
           </div>
            <?php endforeach; ?>
         </div>
+      <?php endif; ?>
       </div>
       <div class="benefits__related" style="background-image: url(<?php echo $benefit["image"]; ?>); background-position: center; background-size: cover;">
           <div class="benefits__related-content">
