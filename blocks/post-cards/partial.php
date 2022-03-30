@@ -45,6 +45,11 @@ endif;
 <div class="post-cards__container <?php echo $variant_container_style; ?>" style="--items-count: <?php echo $items_count ?>;">
     <div class="<?php echo $variant_items_style; ?> card-space-<?php echo $card_spacing ?>"<?php if($variant==='flickity') : ?> data-flickity='<?php echo json_encode($flickity_settings) ?>'<?php endif; ?>>
       <?php foreach($posts as $post):
+        if(get_field("deliverable_bullets", $post)) :
+          $bullets = get_field("deliverable_bullets", $post);
+          $tags = [];
+          foreach($bullets as $bullet) :
+            array_push($tags, ["tag_title" => $bullet['deliverable_bullet_title'], "tag_link" => $bullet['deliverable_bullet_link']];
       get_template_part('elements/post-card/' . $card_type, null, array(
         'classes' => $variant_item_style,
         'title' => get_the_title($post),
@@ -56,6 +61,7 @@ endif;
         'show_date' => __( $args['show_date'] ),
         'date' => get_the_date('jS M Y', $post->ID),
         'image_align' => $image_align,
+        'tags' => $tags,
       ));
       ?> 
       <?php endforeach; ?>

@@ -8,6 +8,7 @@ $loop = ($video_options['loop']) ? " loop" : "";
 $muted = ($video_options['muted']) ? " muted" : "";
 $date = __( $args['date'] ) ? __( $args['date'] ) : '';
 $video_options_string = $autoplay . $controls . $loop . $muted;
+$tags = __( $args['tags'] );
 global $post;
 ?>
 <a class="post-cards__item <?php echo $classes ?><?php echo $args['link'] ? ' linked' : '' ?>" <?php echo $args['link'] ? 'href="' . $args['link'] . '"' : '' ?> style="<?php if($args['link']) : ?>cursor: pointer; <?php endif; ?>background-color: <?php echo $args['card_colours']['card_colour']; ?>;">
@@ -25,6 +26,13 @@ global $post;
     <div class="post-cards__item-text"<?php if($args['card_colours']['description_colour']) : ?> style="color: <?php echo $args['card_colours']['description_colour']; ?>;"<?php endif; ?>>
       <?php echo $args['text'] ?>
     </div>
+    <?php if($tags) : ?>
+      <div class="post-cards__tags">
+        <?php foreach($tags as $tag) : ?>
+          <div class="post-cards__tag"><?php echo $tag["tag_title"] ?></div>
+        <?php endforeach; ?>
+      </div>
+    <?php endif; ?>
     <?php if($args['link']) : ?><span class="post-cards__item-link" href="<?php echo $args['link'] ?>"><i data-feather="arrow-right"></i></span><?php endif; ?>
   </div>
 </a>
