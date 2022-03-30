@@ -45,7 +45,7 @@ https://flickity.metafizzy.co
 
 .flickity-button {
   position: absolute;
-  background: var(--secondary-light-purple-color);
+  background: var(--secondary-dark-grey-color);
   border: none;
   color: #333;
 }
