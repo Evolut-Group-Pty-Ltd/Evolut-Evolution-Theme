@@ -55,16 +55,7 @@ $block_text_with_image__image = function($i) {
 ?>
 <div class="text-with-image__image-col <?php echo $cover ? 'text-with-image__image-col--cover' : '' ?> grid__col--span<?php echo $i['size'] ?>">
   <?php if($video): ?>
-    <?php if (!empty($video) && $video_type!='YouTube') : ?>
-    <figure class="video__container container"><video<?php echo $video_options_string; ?> src="<?php echo $video; ?>" playsinline></video></figure>
-    <?php elseif ($video) : ?>
-    <iframe class="video__container video__youtube container" src="<?php echo $video; ?>" prop-width="1280" prop-height="720" frameborder="0" allowfullscreen="" allow="autoplay" style="width: 100%; height: 100%;" title="<?php echo $text_content['sub_title'] ?>"></iframe>
-    <?php endif; ?>
-  <!--
-  <video<?php echo $video_options_string; ?> class="text-with-image__image-container video">
-      <source src="<?php echo $i['video']; ?>" type="video/mp4">
-  </video>
-  -->
+    <?php echo smart_video($video, $video_options, null) ?>
   <?php else : ?>
   <div class="text-with-image__image-container" style="<?php echo $expand_class ?>">
     <img class="text-with-image__image" src="<?php echo $i['image']['url'] ?>" alt="<?php echo $i['image']['alt'] ?>" style="<?php echo $scale_class ?>">
