@@ -38,7 +38,7 @@ $block_unique_id = get_field('block_unique_id');
       </div>
       <div class="grid__col--span1"></div>
       <?php if(get_field("featured_case_study_video", $post)) : ?>
-      <video class="posts-preview__video grid__col--span6" playsinline autoplay muted loop>
+      <video class="posts-preview__video grid__col--span7" playsinline autoplay muted loop>
           <source src="<?php echo get_field("featured_case_study_video", $post); ?>" type="video/mp4">
       </video>
     <?php else : ?>
