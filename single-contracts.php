@@ -1,5 +1,4 @@
 <?php 
-body_class( 'is-contract' );
 get_template_part('partials/header/header', null, array(
   'sticky' => false
 )); ?>
