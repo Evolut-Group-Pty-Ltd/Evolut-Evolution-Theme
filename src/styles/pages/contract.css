@@ -6,9 +6,10 @@
 .single-contracts .table__thead {
     background-color: black;
     color: white;
+    text-align: left;
 }
 
 .single-contracts .table__td {
-    background-color: white;
+    background-color: #eeeeee;
     color: black;
 }
