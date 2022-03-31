@@ -2,3 +2,13 @@
 	width: 150px;
 	height: auto;
 }
+
+.single-contracts .table__thead {
+    background-color: black;
+    color: white;
+}
+
+.single-contracts .table__td {
+    background-color: white;
+    color: black;
+}

@@ -17,9 +17,9 @@ if ( ! empty ( $table ) ) {
                     foreach ( $table['header'] as $th ) {
                     	$i++;
                     	if ($i==1) {
-                    		echo '<th class="table__th ' . $th['c'] . '" style ="text-align: left">';
+                    		echo '<th class="table__th ' . $th['c'] . '">';
                     	} else {
-                    		echo '<th class="table__th ' . $th['c'] . '" style ="text-align: center">';
+                    		echo '<th class="table__th ' . $th['c'] . '">';
                     	}
                             echo $th['c'];
                         echo '</th>';
@@ -34,9 +34,9 @@ if ( ! empty ( $table ) ) {
                     foreach ( $tr as $td ) {
                     	$i++;
                     	if ($i==1) {
-                    		echo '<td class="table__td" style ="text-align: left">';
+                    		echo '<td class="table__td">';
                     	} else {
-                    		echo '<td class="table__td" style ="text-align: center">';
+                    		echo '<td class="table__td">';
                     	}
                         if ($td['c'] == "YES") {
                         	echo '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
