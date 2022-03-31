@@ -1,8 +1,5 @@
-<?php /* 
-Template Name: Content Only
-Template Post Type: page, service, proposals, contracts
- */ ?>
 <?php 
+body_class( 'is-contract' );
 get_template_part('partials/header/header', null, array(
   'sticky' => false
 )); ?>
