@@ -16,6 +16,7 @@
 .hero-banner-with-list__grid {
   position: relative;
   height: 100%;
+  padding-top: 200px;
 }
 
 .hero-banner-with-list__container {
@@ -27,7 +28,7 @@
 }
 
 .hero-banner-with-list__items {
-  height: 300px;
+  /* height: 300px; */
 }
 
 .hero-banner-with-list__video {
@@ -57,7 +58,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  /* width: 400px; */
+  width: 400px;
 }
 
 .hero-banner-with-list__list-item {
