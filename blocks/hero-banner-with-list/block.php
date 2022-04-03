@@ -26,6 +26,7 @@ if(!empty($block['className'])) $classes[] = $block['className'];
         <?php while(have_rows('list')): the_row(); ?>
         <a class="hero-banner-with-list__list-item" href="<?php the_sub_field('link_url') ?>">
           <?php the_sub_field('link_text') ?>
+          <i class="hero-banner-with-list__list-icon" data-feather="arrow-right"></i>
         </a>
         <?php endwhile; ?>
       </nav>
