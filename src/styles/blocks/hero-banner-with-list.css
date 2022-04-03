@@ -20,14 +20,14 @@
 
 .hero-banner-with-list__container {
     display: flex;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 300px);
     flex-direction: column;
     justify-content: flex-end;
     color: white;
 }
 
 .hero-banner-with-list__items {
-  height: 200px;
+  height: 300px;
 }
 
 .hero-banner-with-list__video {
@@ -55,7 +55,7 @@
 
 .hero-banner-with-list__list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -73,7 +73,7 @@
 
   color: white;
   text-decoration: none;
-  margin-bottom: 120px;
+  margin-bottom: 0px;
 }
 
 .hero-banner-with-list__list-item:hover {
