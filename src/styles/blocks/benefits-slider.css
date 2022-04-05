@@ -106,7 +106,7 @@ a.benefits__list-item--active {
 	flex-direction: column;
 	padding: 50px 70px 30px 70px;
 	background-color: var(--secondary-dark-grey-color);
-	min-height: 190px;
+	/* min-height: 190px; */
 }
 
 .benefits__stats-item {
