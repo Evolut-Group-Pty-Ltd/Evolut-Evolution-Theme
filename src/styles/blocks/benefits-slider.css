@@ -95,6 +95,12 @@ a.benefits__list-item--active {
 	color: var(--secondary-mid-grey-color);
 }
 
+.benefits__meta-description h4 {
+	color: rgba(255,255,255,0.6);
+	line-height: 34px;
+	margin-top: 10px;
+}
+
 .benefits__stats {
 	display: flex;
 	flex-direction: column;
