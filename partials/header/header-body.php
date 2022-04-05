@@ -31,6 +31,10 @@ $logo_height = get_field('logo_height', 'option');
     <nav class="header__menu">
       <?php render_menu('primary', 'header__menu', '-'); ?>
     </nav>
+    <form class="header__model-search ev-model-search" action="/" method="get">
+      <input type="text" class="header__search-box" placeholder="Search" name="s" id="s">
+      <button type="submit" class="header__model-search-btn ev-model-search__btn btn" type="button"><i data-feather="search"></i>
+    </form>
     <button class="header__trigger-btn" aria-label="Website Menu">
       <svg class="header__trigger-icon header__trigger-icon--closed" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="25" height="3" fill="currentColor"/>
