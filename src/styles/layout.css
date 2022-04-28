@@ -252,11 +252,11 @@
 .padding--bottom-triple { padding-bottom: calc(var(--section-gap-size)*3); }
 .padding--bottom-none { padding-bottom: calc(var(--section-gap-size)*0); }
 
-.section.banner-small { height: calc(20vh - 149px); }
-.section.banner-medium { height: calc(50vh - 149px); }
-.section.banner-large { height: calc(60vh - 149px); }
-.section.banner-extra-large { height: calc(80vh - 149px); }
-.section.banner-full { height: calc(100vh - 149px); }
+.section.banner-small { height: calc(20vh); }
+.section.banner-medium { height: calc(50vh); }
+.section.banner-large { height: calc(60vh); }
+.section.banner-extra-large { height: calc(80vh); }
+.section.banner-full { height: calc(100vh); }
 
 /* Block Formatting CSS Rules */
 
