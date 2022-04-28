@@ -9,7 +9,7 @@
   box-shadow: 0 1px 2px rgba(0,0,0, 0.07);
 
   z-index: 10;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 .header:not(.header--overlay)::before {
