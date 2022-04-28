@@ -54,6 +54,7 @@
   margin-bottom: 12px;
 }
 
+/*
 .posts-preview__meta-link.btn {
 background: var(--primary-purple-color);
 transition: background ease-out .3s;
@@ -63,6 +64,7 @@ transition: background ease-out .3s;
   background: var(--primary-gradient);
   transition: background ease-in .2s;
 }
+*/
 
 .posts-preview__image-container {
   height: 100%;
