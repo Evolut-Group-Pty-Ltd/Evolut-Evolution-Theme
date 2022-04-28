@@ -38,7 +38,7 @@
 
 .btn:hover,
 .gform_button:hover {
-  /*background-color: var(--primary-purple-color);*/
+  background-color: var(--primary-orange-color);
   color: white;
   transition: all 0.3s ease-out;
 }
