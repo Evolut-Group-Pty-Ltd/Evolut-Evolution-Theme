@@ -83,10 +83,12 @@
 
 .header__logo-img--white {
   display: none;
+  border-radius: 0px;
 }
 
 .header--overlay:not(.header--open) .header__logo-img--white {
   display: initial;
+  border-radius: 0px;
 }
 
 .header--overlay:not(.header--open) .header__logo-img--dark {
