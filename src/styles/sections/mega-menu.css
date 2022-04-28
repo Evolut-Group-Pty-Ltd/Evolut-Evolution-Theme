@@ -84,7 +84,7 @@ svg.svg-filter {
     flex-direction: column;
     justify-content: space-between;
     padding: 0px 40px 40px;
-    background-color: var(--secondary-light-purple-color);
+    background-color: white;
   }
   
   .mega-menu__item-column {
@@ -172,14 +172,14 @@ svg.svg-filter {
 }
 
 .mega-menu__item-list-col-heading-link {
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
     vertical-align: bottom;
     align-self: flex-end;
     margin-bottom: 5px;
     text-decoration: none;
-    color: var(--secondary-mid-grey-color);
+    color: black;
 }
 
 .mega-menu__item-list-col-heading {
