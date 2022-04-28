@@ -80,7 +80,7 @@
     display: grid;
     flex-direction: column;
     justify-content: flex-end;
-    padding-bottom: 10vh;
+    /* padding-bottom: 10vh; */
 }
 
 .service-header__links-container {
@@ -92,7 +92,7 @@
 .service-header__column {
     display: flex;
     flex-direction: column;
-    align-self: flex-end;
+    align-self: center;
     padding-right: 100px;
     justify-content: flex-end;
 }
