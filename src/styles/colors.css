@@ -28,7 +28,6 @@
 
   --primary-gradient-overlay: linear-gradient(94.44deg, rgba(90, 40, 127,0.5) 0%, rgba(207, 95, 101,0.5) 56%, rgba(219, 142, 51,0.5) 100%);
   --secondary-gradient-overlay: linear-gradient(94.44deg, rgba(42, 74, 150,0.5) 0%, rgba(14, 113, 135,0.5) 56%, rgba(123, 178, 106,0.5) 100%);
-
-  --primary-gradient-overlay-dark: linear-gradient(94.44deg, rgba(45, 20, 63,0.8) 0%, rgba(103, 47, 50,0.8) 56%, rgba(110, 71, 26,0.8) 100%);
+  --primary-gradient-overlay-dark: linear-gradient(94.44deg, rgb(48 21 44) 0%, rgb(153 66 120 / 77%) 100%);
   --secondary-gradient-overlay-dark: linear-gradient(94.44deg, rgba(21, 37, 75,0.7) 0%, rgba(7, 56, 67,0.7) 56%, rgba(61, 89, 53,0.7) 100%);
 }
