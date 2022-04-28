@@ -4,7 +4,7 @@
   --current-item: 1;
   
   text-align: center;
-}
+  margin-top: 50px;
 
 .image-showcase__container {
   position: relative;
