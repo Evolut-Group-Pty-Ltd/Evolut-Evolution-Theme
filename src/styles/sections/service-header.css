@@ -38,10 +38,11 @@
     font-weight: 500;
 }
 .service-header__title {
-  color: white;
-  margin-bottom: 10px;
-  font-size: 40px;
-  line-height: 54px;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 500;
 }
 
 .service-header__text {
@@ -79,7 +80,7 @@
     display: grid;
     flex-direction: column;
     justify-content: flex-end;
-    padding-bottom: 30px;
+    padding-bottom: 10vh;
 }
 
 .service-header__links-container {
