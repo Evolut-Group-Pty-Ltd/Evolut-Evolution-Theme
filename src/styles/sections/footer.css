@@ -17,6 +17,10 @@
   grid-auto-flow: column;
 }
 
+.footer__logo-img {
+  border-radius: 0px;
+}
+
 .footer__navs {
   margin-bottom: 30px;
 }
