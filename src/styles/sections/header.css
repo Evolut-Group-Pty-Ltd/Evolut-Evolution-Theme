@@ -145,7 +145,7 @@
 }
 
 .header__menu-item--active::after {
-    background-color: var(--primary-orange-color);
+    background-color: var(--primary-purple-color);
 }
 
 .header--overlay .header__menu-item {
