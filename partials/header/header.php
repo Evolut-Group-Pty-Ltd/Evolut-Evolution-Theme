@@ -15,4 +15,4 @@ elseif($page_type == 'taxonomy') :
 	$page_type_colour = get_field('page_type_colour', 'option');
 endif;
 ?>
-<main class="main"<?php echo (get_field("page_background_colour") || get_field("page_type_colour")) ? sprintf(' style="background-color: %s; color: %s;"', $page_background, $page_type_colour) : '' ?>>
+<main class="main"<?php echo ($page_background  || $page_type_colour) ? sprintf(' style="background-color: %s; color: %s;"', $page_background, $page_type_colour) : '' ?>>
