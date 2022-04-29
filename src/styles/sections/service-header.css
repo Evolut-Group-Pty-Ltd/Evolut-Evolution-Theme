@@ -71,7 +71,7 @@
     background-color: rgba(0,0,0,0.6);
     background-size: cover;
     background-position: center;
-    /* background: var(--primary-gradient-overlay-dark); */
+    background: var(--primary-gradient-overlay-dark);
     filter: saturate(1.8);
 }
 
@@ -92,9 +92,10 @@
 .service-header__column {
     display: flex;
     flex-direction: column;
-    align-self: center;
+    align-self: flex-end;
     padding-right: 100px;
     justify-content: flex-end;
+    margin-bottom: 5vh;
 }
 
 .service-header__column--related {
