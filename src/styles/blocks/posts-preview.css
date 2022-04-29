@@ -82,7 +82,7 @@ transition: background ease-out .3s;
 }
 
 .posts-preview__list-item {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid rgba(255,255,255,0.1);
   padding-top: 12px;
   width: calc((100% - 30px * 3) / 6);
   margin-right: 15px;
@@ -91,14 +91,16 @@ transition: background ease-out .3s;
 }
 
 .posts-preview__list-item-type {
-  color: #ccc;
-  margin-bottom: 3px;
+    color: rgba(255,255,255,0.1);
+    margin-bottom: 3px;
 }
 
 .posts-preview__list-item-title {
-  color: rgba(255, 255, 255,0.3);
-  font-size: 18px;
-  line-height: 22px;
+    color: rgba(255, 255, 255,0.3);
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    padding-bottom: 15px;
 }
 
 .posts-preview__list-item-title:hover {

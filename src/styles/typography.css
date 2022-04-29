@@ -56,11 +56,12 @@ h5, .heading--h5 {
 }
 
 .text--caps14 {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 21px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .text--caps12 {
