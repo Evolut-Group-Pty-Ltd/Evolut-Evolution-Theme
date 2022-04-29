@@ -1,7 +1,7 @@
 .sub__menu {
     background-color: var(--primary-purple-color);
     color: white;
-    /* position: sticky; */
+    position: relative; 
     top: 65px;
     z-index: 3;
 }
