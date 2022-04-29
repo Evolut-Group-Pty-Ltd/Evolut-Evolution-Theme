@@ -3,11 +3,11 @@
     $post_type = get_field('post_type');
 
     $args = array(
-      'menu_name' => 'resources',
+      'menu_name' => 'insights',
       'post_type' => $post_type,
     );
   ?>
-<?php // get_template_part('partials/submenu/submenu', null, $args); ?>
+<?php get_template_part('partials/submenu/submenu', null, $args); ?>
 <?php  
 $term = get_queried_object();
 $bg_image = get_field('bg_image', $term);
