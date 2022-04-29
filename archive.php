@@ -15,7 +15,7 @@ $bg_image = get_field('bg_image', $term);
     'bg_image' => $bg_image,
   ); 
 ?>
-<?php get_template_part('partials/service-header/service-header-2', null, $args) ?>
+<?php //get_template_part('partials/service-header/service-header-2', null, $args) ?>
 
 <?php $post_type = get_post_type(); ?>
 
