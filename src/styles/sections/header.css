@@ -34,7 +34,7 @@
 }
 
 .header--overlay:not(.header--open) {
-  position: absolute;
+  position: relative;
   margin-top: var(--topbar-height);
   width: 100%;
   z-index: 10;

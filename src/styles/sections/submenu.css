@@ -2,7 +2,7 @@
     background-color: var(--primary-purple-color);
     color: white;
     position: relative; 
-    top: 65px;
+    /* top: 65px; */
     z-index: 3;
 }
 
