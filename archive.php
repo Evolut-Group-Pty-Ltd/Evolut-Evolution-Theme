@@ -1,7 +1,7 @@
 <?php get_template_part('partials/header/header'); ?>
 <?php
     $post_type = get_field('post_type');
-    $menu_name = ($post_type=='casestudies') ? 'casestudies' : 'insights';
+    $menu_name = ($post_type=='casestudies') ? 'case-studies' : 'insights';
 
     $args = array(
       'menu_name' => $menu_name,
