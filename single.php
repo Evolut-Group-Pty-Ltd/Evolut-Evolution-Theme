@@ -7,7 +7,7 @@
       'post_type' => $post_type,
     );
   ?>
-<?php get_template_part('partials/submenu/submenu', null, $args); ?>
+<?php //get_template_part('partials/submenu/submenu', null, $args); ?>
 <?php get_template_part('partials/service-header/service-header-2'); ?>
 <?php
     $yurika_team = get_field('yurika_team');
