@@ -24,7 +24,7 @@
 
 .header--sticky {
   position: sticky;
-  top: var(--topbar-height);
+  top: 0px;
 }
 
 .header--fixed {
