@@ -1,7 +1,7 @@
 <?php get_template_part('partials/header/header'); ?>
 <?php
     $post_type = get_field('post_type');
-    $menu_name = ($post_type==='casestudies') ? 'case_studies' : 'insights';
+    $menu_name = is_post_type_archive( 'casestudies' ) ? 'casestudies' : 'insights';
 
     $args = array(
       'menu_name' => $menu_name,
