@@ -1,4 +1,8 @@
 <?php
+$page_type = 'page';
+if(is_archive()) $page_type = 'archive';
+if(is_tax()) $page_type = 'taxonomy';
+
 $sticky = array_key_exists('sticky', $args) ? $args['sticky'] : true;
 
 $topbar_args = array_key_exists('topbar_args', $args) ? $args['topbar_args'] : array();
@@ -6,18 +10,15 @@ $topbar_args['sticky'] = $sticky;
 
 //get_template_part('partials/topbar/topbar', null, $topbar_args);
 
-global $ev_models;
-$ev_models = get_posts(array(
-  'post_type' => 'ev-vehicle',
-  'posts_per_page' => -1
-));
-
 $classes = array();
 if($sticky) $classes[] = 'header--sticky';
 if(array_key_exists('class', $args)) {
   $classes = array_merge($classes, $args['class']);
 }
-$is_overlay = get_field('overlay_header_over_content');
+
+if($page_type == 'page') $is_overlay = get_field('overlay_header_over_content');
+if($page_type == 'archive') $is_overlay = get_field('overlay_header_over_content', 'option');
+if($page_type == 'taxonomy') $is_overlay = get_field('overlay_header_over_content', 'option');
 if($is_overlay) $classes[] = 'header--overlay';
 
 $logo_height = get_field('logo_height', 'option');
