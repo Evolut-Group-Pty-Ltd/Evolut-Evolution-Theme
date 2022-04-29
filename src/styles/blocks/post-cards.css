@@ -279,7 +279,7 @@
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
-  color: rgba(90,40,127,0.4);
+  color: var(--primary-coral-color);
   margin-bottom: 10px;
 }
 
