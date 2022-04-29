@@ -47,10 +47,12 @@
 
 .sub__menu .menu li a {
     text-decoration: none;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 13px;
+    line-height: 13px;
     font-weight: 500;
     color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .sub__menu .menu li.menu-item-object-industry a {
@@ -66,7 +68,7 @@
 } */
 
 .sub__menu .menu li a:hover {
-    color: var(--primary-orange-color);
+    color: var(--primary-coral-color);
     /* background: var(--primary-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
@@ -90,7 +92,7 @@
 }
 
 .sub__menu .menu li.current-menu-item {
-    color: var(--primary-orange-color);
+    color: var(--primary-coral-color);
     /* background: var(--primary-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
