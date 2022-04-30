@@ -68,7 +68,7 @@ endif;
   <?php endif; ?>
   <div class="service-header__img-bg">
     <div class="service-header__container container grid">
-      <div class="service-header__column grid__col--span5">
+      <div class="service-header__column grid__col--span6">
         <h3 class="service-header__sub-title"><?php if(!is_page()) : ?><?php echo (($greatgrandparentID) ? get_the_title($greatgrandparentID) : $page_tag); ?><?php echo (($grandparentID) ? ' > ' . get_the_title($grandparentID) : ''); ?><?php else : ?><?php echo $page_tag; ?><?php endif; ?></h3>
         <h1 class="service-header__title lines-shift-container"><?php echo $page_title; ?></h1>
         <div class="service-header__text text--intro lines-shift-container" style="--shift-delay: 150ms;"><?php echo $page_description; ?></div>
