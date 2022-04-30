@@ -1,6 +1,6 @@
 <?php /* 
 Template Name: Persona
-Template Post Type: page, resource, casestudies, solution, service, industry, expertise-items, capability
+Template Post Type: page, resource, casestudies, solution, services, industry, expertise-items, capability
  */ ?>
 <?php get_template_part('partials/header/header'); ?>
 <?php get_template_part('partials/submenu/submenu'); ?>
