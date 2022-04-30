@@ -92,10 +92,10 @@
 .service-header__column {
     display: flex;
     flex-direction: column;
-    align-self: flex-end;
+    align-self: center;
     padding-right: 100px;
     justify-content: flex-end;
-    margin-bottom: 5vh;
+    /* margin-bottom: 5vh; */
 }
 
 .service-header__column--related {

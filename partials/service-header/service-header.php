@@ -10,7 +10,7 @@ $banner_height = get_field('banner_height');
   <?php endif; ?>
   <div class="service-header__img-bg">
     <div class="service-header__container container grid">
-      <div class="service-header__column grid__col--span8">
+      <div class="service-header__column grid__col--span5">
         <h3 class="service-header__sub-title">Service</h3>
         <h1 class="service-header__title lines-shift-container"><?php the_title() ?></h1>
         <div class="service-header__text text--intro lines-shift-container" style="--shift-delay: 150ms;"><?php the_excerpt() ?></div>
