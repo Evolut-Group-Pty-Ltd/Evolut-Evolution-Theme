@@ -33,8 +33,14 @@
 
 .hero-banner__title {
   margin-bottom: 12px;
+  width: 40%;
 }
 
 .hero-banner__text {
   margin-bottom: 32px;
+  width: 40%;
+}
+
+.hero-banner__btn {
+  width: 250px;
 }
