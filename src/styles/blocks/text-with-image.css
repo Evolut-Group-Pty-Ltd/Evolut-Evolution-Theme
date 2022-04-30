@@ -161,6 +161,8 @@
 
 #reinvention .text-with-image__image {
   animation: rotation 2s infinite linear;
+  display: block;
+  transform-origin: center;
 }
 
 @keyframes rotation {
@@ -170,6 +172,10 @@
   to {
     transform: rotate(359deg);
   }
+}
+
+#reinvention .text-with-image__image-container {
+  overflow: unset;
 }
 
 /* VIDEO SUPPORT CSS */
