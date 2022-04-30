@@ -1,5 +1,5 @@
 :root {
-  --header-height: 70px;
+  --header-height: 80px;
   --mobile-header-space: 200px;
 }
 
@@ -131,7 +131,7 @@
   left: 0; bottom: 0;
   width: 100%;
   height: 5px;
-  margin-bottom: -15px;
+  margin-bottom: -20px;
   transform: scaleX(0);
   transform-origin: right;
   background-color: var(--primary-orange-color);
