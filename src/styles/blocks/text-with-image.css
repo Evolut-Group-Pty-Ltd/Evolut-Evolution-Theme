@@ -159,6 +159,20 @@
   }
 }
 
+#reinvention .text-with-image__image {
+  animation: loader 1.25s infinite;
+}
+
+@keyframes loader {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    border-radius: 50%;
+    rotate: 180deg;
+  }
+}
+
 /* VIDEO SUPPORT CSS */
 
 .text-with-image__image-col--cover video.text-with-image__image-container {
