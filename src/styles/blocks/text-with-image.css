@@ -160,7 +160,7 @@
 }
 
 #reinvention .text-with-image__image {
-  animation: rotation 2s infinite linear;
+  animation: rotation 8s infinite linear;
   display: block;
   transform-origin: center;
 }
