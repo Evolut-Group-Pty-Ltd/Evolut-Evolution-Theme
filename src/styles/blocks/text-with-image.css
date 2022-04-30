@@ -160,15 +160,15 @@
 }
 
 #reinvention .text-with-image__image {
-  animation: loader 1.25s infinite;
+  animation: rotation 2s infinite linear;
 }
 
-@keyframes loader {
-  0% {
-    rotate: 0deg;
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
   }
-  100% {
-    rotate: 180deg;
+  to {
+    transform: rotate(359deg);
   }
 }
 
