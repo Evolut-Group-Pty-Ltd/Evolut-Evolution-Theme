@@ -168,7 +168,6 @@
     rotate: 0deg;
   }
   100% {
-    border-radius: 50%;
     rotate: 180deg;
   }
 }
