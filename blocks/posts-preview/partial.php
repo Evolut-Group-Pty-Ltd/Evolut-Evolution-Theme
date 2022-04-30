@@ -8,7 +8,7 @@ $subheading_colour = get_field("block_colours")["subheading_colour"];
 $description_colour = get_field("block_colours")["description_colour"];
 $block_unique_id = get_field('block_unique_id');
 ?>
-<div class="posts-preview <?php echo $args['classes'] ?>"<?php if($background_colour) : ?> style="background-color: <?php echo $background_colour ?>;"<?php endif; ?>>
+<div class="posts-preview <?php echo $args['classes'] ?>">
   <div class="posts-preview__views container">
     <?php foreach($selected_posts as $idx => $post): ?>
     <div class="posts-preview__view grid <?php echo $idx === 0 ? 'posts-preview__view--active' : '' ?>">
