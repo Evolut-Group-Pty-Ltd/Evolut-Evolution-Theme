@@ -217,6 +217,10 @@
     background-color: rgba(0,0,0,0);
 }
 
+.post-cards__item.bg-image .post-cards__item-content:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
 .post-cards__item-text {
   font-size: 18px;
   line-height: 24px;
