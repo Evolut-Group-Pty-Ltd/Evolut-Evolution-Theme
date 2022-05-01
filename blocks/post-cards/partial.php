@@ -64,6 +64,7 @@ endif;
         'date' => get_the_date('jS M Y', $post->ID),
         'image_align' => $image_align,
         'tags' => $tags,
+        'code' => get_field('code', $post),
       ));
       ?> 
       <?php endforeach; ?>

@@ -9,6 +9,7 @@ $muted = ($video_options['muted']) ? " muted" : "";
 $date = __( $args['date'] ) ? __( $args['date'] ) : '';
 $video_options_string = $autoplay . $controls . $loop . $muted;
 $tags = __( $args['tags'] );
+$code = __( $args['code'] );
 global $post;
 ?>
 <a class="post-cards__item <?php echo $classes ?><?php echo $args['link'] ? ' linked' : '' ?>" <?php echo $args['link'] ? 'href="' . $args['link'] . '"' : '' ?> style="<?php if($args['link']) : ?>cursor: pointer; <?php endif; ?>background-color: <?php echo $args['card_colours']['card_colour']; ?>;">
@@ -22,6 +23,7 @@ global $post;
   <?php endif; ?>
   <div class="post-cards__item-content">
     <?php if(__($args['show_date'])) : ?><div class="post-cards__date"><?php echo $date; ?></div><?php endif; ?>
+    <div class="post-cards__item-code"<?php if($args['card_colours']['code_colour']) : ?> style="color: <?php echo $args['card_colours']['code_colour']; ?>;"<?php endif; ?>><?php echo $args['code'] ?></div>
     <h5 class="post-cards__item-title"<?php if($args['card_colours']['heading_colour']) : ?> style="color: <?php echo $args['card_colours']['heading_colour']; ?>;"<?php endif; ?>><?php echo $args['title'] ?></h5>
     <div class="post-cards__item-text"<?php if($args['card_colours']['description_colour']) : ?> style="color: <?php echo $args['card_colours']['description_colour']; ?>;"<?php endif; ?>>
       <?php echo $args['text'] ?>
