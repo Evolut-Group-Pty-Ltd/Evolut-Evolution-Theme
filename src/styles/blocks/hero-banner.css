@@ -43,3 +43,12 @@
 .hero-banner__btn {
   width: 250px;
 }
+
+/* 1440 and below */
+
+@media (max-width: 1440px) {
+  .hero-banner__title {
+    font-size: 44px;
+    line-height: 1.1;
+  }
+}
