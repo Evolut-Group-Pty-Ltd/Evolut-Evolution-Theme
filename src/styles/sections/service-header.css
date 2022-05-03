@@ -243,6 +243,19 @@ a .service-header__featured-download__description {
     line-height: 1.2;
 }
 
+/* 1600 and below */
+
+@media (max-width: 1600px) {
+  .service-header__title {
+    font-size: 48px;
+    line-height: 1.1;
+    }
+  .service-header__text {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
 
 /* RESPONSIVE */
 
