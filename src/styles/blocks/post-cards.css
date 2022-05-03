@@ -329,6 +329,13 @@
   .post-cards__item-image {
     height: 222px;
   }
+  .post-cards__item-image:before {
+    height: 222px;
+  }
+  .post-cards__item-title {
+    font-size: 24px;
+    line-height: 1.2;
+  }
 }
 
 /* 1440 and below */
@@ -340,6 +347,12 @@
   .post-cards__item-image {
     height: 195px;
   }
+  .post-cards__item-image:before {
+    height: 195px;
+  }
+  .post-cards__item-title {
+    font-size: 22px;
+  }
 }
 
 /* 1366 and below */
@@ -350,6 +363,12 @@
   }
   .post-cards__item-image {
     height: 180px;
+  }
+  .post-cards__item-image:before {
+    height: 180px;
+  }
+  .post-cards__item-title {
+    font-size: 20px;
   }
 }
 
