@@ -8,7 +8,7 @@
     height: 49px;
     padding: 0 10px;
     min-width: 149px;
-    background-color: var(--primary-coral-color);
+    background-color: var(--primary-orangw-color);
     border: none;
     border-radius: 50px;
     text-decoration: none;
@@ -38,7 +38,7 @@
 
 .btn:hover,
 .gform_button:hover {
-  background-color: var(--primary-orange-color);
+  background-color: var(--primary-coral-color);
   color: white;
   transition: all 0.3s ease-out;
 }
