@@ -132,6 +132,32 @@ transition: background ease-out .3s;
     border-radius: 6px;
 }
 
+/* 1600 and below */
+
+@media (max-width: 1600px) {
+  .posts-preview__video {
+    height:600px;
+  }
+}
+
+/* 1440 and below */
+
+@media (max-width: 1440px) {
+  .posts-preview__video {
+    height: 530px;
+  }
+}
+
+/* 1366 and below */
+
+@media (max-width: 1366px) {
+  .posts-preview__video {
+    height: 500px;
+  }
+}
+
+/* Mobile / 768 and below */
+
 @media (max-width: 1024px) {
   .posts-preview__meta-title {
     font-size: 30px;
