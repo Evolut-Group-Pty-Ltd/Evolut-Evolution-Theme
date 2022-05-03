@@ -299,6 +299,27 @@
   margin-bottom: 10px;
 }
 
+/* FLICKITY SUPPORT */
+
+/* external css: flickity.css */
+
+.carousel {
+  /*background: #EEE; */
+}
+
+.carousel-cell {
+  width: 435px;
+  height: 650px;
+  margin-right: 20px;
+  /*background: #8C8;
+  border-radius: 5px;*/
+  counter-increment: carousel-cell;
+}
+
+.post-cards__container.flickity__container {
+  margin-bottom: 60px;
+}
+
 /* 1600 and below */
 
 @media (max-width: 1600px) {
@@ -459,27 +480,6 @@
   margin-bottom: 5px;
   border-radius: 15px;
   font-weight: 700;
-}
-
-/* FLICKITY SUPPORT */
-
-/* external css: flickity.css */
-
-.carousel {
-  /*background: #EEE; */
-}
-
-.carousel-cell {
-  width: 435px;
-  height: 650px;
-  margin-right: 20px;
-  /*background: #8C8;
-  border-radius: 5px;*/
-  counter-increment: carousel-cell;
-}
-
-.post-cards__container.flickity__container {
-  margin-bottom: 60px;
 }
 
 /* TABLET STYLING */
