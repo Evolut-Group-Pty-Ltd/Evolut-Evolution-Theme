@@ -264,6 +264,7 @@
 .has-orange-heading-tag-color h6 { color: var(--primary-orange-color); }
 .has-coral-heading-tag-color h6 { color: var(--primary-coral-color); }
 .has-dark-grey-heading-tag-color h6 { color: var(--primary-dark-grey-color); }
+.has-mid-grey-heading-tag-color h6 { color: var(--primary-mid-grey-color); }
 .has-light-purple-heading-tag-color h6 { color: var(--secondary-light-purple-color); }
 .has-blue-heading-tag-color h6 { color: var(--seconday-blue-color); }
 .has-teal-heading-tag-color h6 { color: var(--secondary-teal-color); }
@@ -275,6 +276,7 @@
 .has-orange-title-color h2 { color: var(--primary-orange-color); }
 .has-coral-title-color h2 { color: var(--primary-coral-color); }
 .has-dark-grey-title-color h2 { color: var(--primary-dark-grey-color); }
+.has-mid-grey-title-color h2 { color: var(--primary-mid-grey-color); }
 .has-light-purple-title-color h2 { color: var(--secondary-light-purple-color); }
 .has-blue-title-color h2 { color: var(--seconday-blue-color); }
 .has-teal-title-color h2 { color: var(--secondary-teal-color); }
@@ -286,6 +288,7 @@
 .has-orange-subheading-color h3 { color: var(--primary-orange-color); }
 .has-coral-subheading-color h3 { color: var(--primary-coral-color); }
 .has-dark-grey-subheading-color h3 { color: var(--primary-dark-grey-color); }
+.has-mid-grey-subheading-color h3 { color: var(--primary-mid-grey-color); }
 .has-light-purple-subheading-color h3 { color: var(--secondary-light-purple-color); }
 .has-blue-subheading-color h3 { color: var(--seconday-blue-color); }
 .has-teal-subheading-color h3 { color: var(--secondary-teal-color); }
@@ -297,6 +300,7 @@
 .has-orange-description-color { color: var(--primary-orange-color); }
 .has-coral-description-color { color: var(--primary-coral-color); }
 .has-dark-grey-description-color { color: var(--primary-dark-grey-color); }
+.has-mid-grey-description-color { color: var(--primary-mid-grey-color); }
 .has-light-purple-description-color { color: var(--secondary-light-purple-color); }
 .has-blue-description-color { color: var(--seconday-blue-color); }
 .has-teal-description-color { color: var(--secondary-teal-color); }
@@ -308,6 +312,7 @@
 .has-orange-background-color { background-color: var(--primary-orange-color); }
 .has-coral-background-color { background-color: var(--primary-coral-color); }
 .has-dark-grey-background-color { background-color: var(--primary-dark-grey-color); }
+.has-mid-grey-background-color { background-color: var(--primary-mid-grey-color); }
 .has-light-purple-background-color { background-color: var(--secondary-light-purple-color); }
 .has-blue-background-color { background-color: var(--seconday-blue-color); }
 .has-teal-background-color { background-color: var(--secondary-teal-color); }
