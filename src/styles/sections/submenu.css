@@ -82,7 +82,7 @@
 .sub__menu .menu li.current-menu-parent a,
 .sub__menu .menu li.current-menu-ancestor a,
 .sub__menu .menu li.current-menu-item a {
-    color: var(--primary-coral-color);
+    color: var(--primary-orange-color);
 }
 
 .sub__menu .menu li.current-menu-parent::after {
