@@ -132,7 +132,7 @@
 /* 1600 and below */
 
 @media (max-width: 1600px) {
-  .text-with-image__sub-title.heading-large {
+  .btn, .gform_button {
     font-size: 12px;
     line-height: 1;
     letter-spacing: 1px;
