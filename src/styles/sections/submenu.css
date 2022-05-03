@@ -228,6 +228,18 @@
     text-decoration: underline;
 }
 
+/* 1500 and below */
+
+@media (max-width: 1500px) {
+  .sub__menu .menu li a {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* Tablet / 1024 and below */
+
 @media (max-width: 1024px) {
     .breadcrumbs {
         /*top: 90px;
