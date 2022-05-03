@@ -46,7 +46,7 @@
 
 .text-with-image__btn {
   margin-top: 30px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   z-index: 1;
 }
 
