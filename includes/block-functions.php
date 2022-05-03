@@ -9,6 +9,7 @@ function get_colour($acf_field, $block_colours) {
        "orange"       => "#00aeef",
        "coral"        => "#e235e5",
        "dark-grey"    => "#191b1c",
+       "mid-grey"    => "#1f2122",
        "black"        => "#000000",
        "white"        => "#ffffff",
        "grey-light"   => "#f7f7f7",
