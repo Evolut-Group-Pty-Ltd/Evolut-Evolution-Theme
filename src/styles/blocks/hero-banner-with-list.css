@@ -122,6 +122,28 @@
   color: white;
 }
 
+/* 1440px */
+
+@media (max-width: 1440px) {
+  .hero-banner-with-list__title {
+    font-size: 50px;
+    line-height: 1.1;
+  }
+
+  .hero-banner-with-list__text {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .hero-banner-with-list__list-item {
+    min-height: 35px;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+}
+
+
+/* Tablet -> Laptop */
 
 @media (min-width: 1025px) and (max-width: 1365px) {
   .hero-banner-with-list__title {
@@ -135,6 +157,7 @@
   }
 }
 
+/* Mobile & Tablet */
 
 @media (max-width: 1023px) {
   .hero-banner-with-list__corner {
