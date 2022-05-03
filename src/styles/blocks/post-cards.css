@@ -326,6 +326,9 @@
   .carousel-cell {
     width: 343px;
   }
+  .post-cards__item-image {
+    height: 222px;
+  }
 }
 
 /* 1440 and below */
@@ -334,6 +337,9 @@
   .carousel-cell {
     width: 300px;
   }
+  .post-cards__item-image {
+    height: 195px;
+  }
 }
 
 /* 1366 and below */
@@ -341,6 +347,9 @@
 @media (max-width: 1366px) {
   .carousel-cell {
     width: 278px;
+  }
+  .post-cards__item-image {
+    height: 180px;
   }
 }
 
