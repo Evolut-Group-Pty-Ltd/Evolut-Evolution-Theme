@@ -13,3 +13,23 @@
 .gform_wrapper.gravity-theme .gchoice {
   margin-bottom: 10px;
 }
+
+.gform_title {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 52px;
+    line-height: 62px;
+}
+
+.gform_wrapper.gravity-theme .gfield_label {
+    color: white;
+}
+
+.gform_wrapper .gfield_required {
+    color: var(--primary-orange-color);
+}
+
+.gform_wrapper.gravity-theme .gchoice {
+    display: inline-flex;
+    margin-right: 20px;
+}
