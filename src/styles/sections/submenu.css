@@ -236,6 +236,9 @@
     line-height: 12px;
     letter-spacing: 0.5px;
   }
+  .sub__menu .menu li:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 /* 1440 and below */
