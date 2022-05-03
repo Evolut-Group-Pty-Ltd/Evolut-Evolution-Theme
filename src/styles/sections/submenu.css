@@ -228,9 +228,9 @@
     text-decoration: underline;
 }
 
-/* 1500 and below */
+/* 1520 and below */
 
-@media (max-width: 1500px) {
+@media (max-width: 1520px) {
   .sub__menu .menu li a {
     font-size: 12px;
     line-height: 12px;
