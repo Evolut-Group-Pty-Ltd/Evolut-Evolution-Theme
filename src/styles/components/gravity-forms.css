@@ -26,10 +26,14 @@
 }
 
 .gform_wrapper .gfield_required {
-    color: var(--primary-orange-color);
+    color: var(--primary-orange-color) !important;
 }
 
 .gform_wrapper.gravity-theme .gchoice {
     display: inline-flex;
     margin-right: 20px;
+}
+
+.gform_wrapper.gravity-theme .gfield-choice-input+label {
+    color: white;
 }
