@@ -111,6 +111,13 @@
   transform: scale(1);
 }
 
+@media (max-width: 1600px) {
+  .text-with-image__sub-title.heading-large {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+}
+
 @media (max-width: 768px) {
   /*.text-with-image__gap-col:not(:last-child) {
     height: 30px;
