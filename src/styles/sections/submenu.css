@@ -238,6 +238,14 @@
   }
 }
 
+/* 1440 and below */
+
+@media (max-width: 1440px) {
+  .sub__menu .menu li:not(:last-child) {
+    margin-right: 0px;
+  }
+}
+
 /* Tablet / 1024 and below */
 
 @media (max-width: 1024px) {
