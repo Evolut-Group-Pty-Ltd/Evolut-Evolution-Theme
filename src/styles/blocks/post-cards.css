@@ -325,6 +325,7 @@
 @media (max-width: 1600px) {
   .carousel-cell {
     width: 343px;
+    height: 500px;
   }
   .post-cards__item-image {
     height: 222px;
@@ -347,6 +348,7 @@
 @media (max-width: 1440px) {
   .carousel-cell {
     width: 300px;
+    height: 480px;
   }
   .post-cards__item-image {
     height: 195px;
@@ -367,6 +369,7 @@
 @media (max-width: 1366px) {
   .carousel-cell {
     width: 278px;
+    height: 460px;
   }
   .post-cards__item-image {
     height: 180px;
