@@ -68,7 +68,7 @@
 } */
 
 .sub__menu .menu li a:hover {
-    color: var(--primary-coral-color);
+    color: var(--primary-orange-color);
     /* background: var(--primary-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
