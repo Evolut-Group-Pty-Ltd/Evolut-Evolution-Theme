@@ -324,13 +324,16 @@
 
 @media (max-width: 1600px) {
   .carousel-cell {
-    width: 340px;
+    width: 343px;
   }
 }
 
 /* Mobile / 768 and below */
 
 @media (max-width: 768px) {
+  .carousel-cell {
+    width: 30px;
+  }
   .post-cards__container {
     /* height: 510px; */
   }
