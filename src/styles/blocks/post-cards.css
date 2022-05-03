@@ -299,6 +299,16 @@
   margin-bottom: 10px;
 }
 
+/* 1600 and below */
+
+@media (max-width: 1600px) {
+  .carousel-cell {
+    width: 340px;
+  }
+}
+
+/* Mobile / 768 and below */
+
 @media (max-width: 768px) {
   .post-cards__container {
     /* height: 510px; */
