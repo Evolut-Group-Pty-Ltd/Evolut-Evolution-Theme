@@ -96,6 +96,10 @@
   .block__container {
     height: 510px;
   }
+  .block__sub-heading {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 /* FEATURED SECTION TO REMOVE MARGIN UNDER HEADER */
