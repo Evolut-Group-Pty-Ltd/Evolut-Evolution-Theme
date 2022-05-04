@@ -289,7 +289,7 @@ svg.svg-filter {
 
   .mega-menu__item-link-2-container:not(:last-child),
   .mega-menu__item-column:not(:last-child){
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .mega-menu__item:not(.evlt-accordion__item--active) {
