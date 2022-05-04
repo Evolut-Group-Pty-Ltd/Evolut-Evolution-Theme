@@ -130,7 +130,7 @@
 }
 
 .ais-hits--thumbnail.ais-hits--thumbnail img {
-  width: 100%; height: 282px;
+  width: 500px; height: 282px;
   object-fit: cover;
 }
 
