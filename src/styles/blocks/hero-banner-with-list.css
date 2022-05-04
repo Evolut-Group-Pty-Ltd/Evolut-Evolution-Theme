@@ -162,9 +162,9 @@
 @media (max-width: 1023px) {
   .hero-banner-with-list__grid {
     position: relative;
-    height: 90vh;
+    height: 80vh;
     padding-top: 200px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
   .hero-banner-with-list__corner {
     display: none;
