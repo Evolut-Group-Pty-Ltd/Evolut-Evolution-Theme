@@ -103,11 +103,11 @@
   }
 
   .image-showcase .image-showcase__image-container {
-    margin: 0 10px;
+    margin: 0 30px;
   }
 
   .image-showcase .image-showcase__image {
-    /*width: calc(50% - var(--item-gap) / 2);*/
+    width: 170px;
     height: 100%;
     object-fit: contain;
   }
