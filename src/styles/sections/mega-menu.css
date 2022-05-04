@@ -361,3 +361,11 @@ svg.svg-filter {
     display: none;
   }
 }
+
+/* HIDE ON DESKTOP */
+
+@media (min-width: 1025px) {
+  .mega-menu {
+    display: none;
+  }
+}
