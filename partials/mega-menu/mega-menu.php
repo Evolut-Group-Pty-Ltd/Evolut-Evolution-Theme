@@ -51,74 +51,6 @@ echo "-->";*/
 ?>
 
 <section class="mega-menu evlt-accordion evlt-accordion--sm-only <?php echo implode(' ', $classes) ?>">
-  <svg xmlns="http://www.w3.org/2000/svg" class="svg-filter">
-  <defs>
-    <filter id="yurika-duotone">
-      <feColorMatrix type="matrix" result="grayscale"
-          values="1 0 0 0 0
-                  1 0 0 0 0
-                  1 0 0 0 0
-                  0 0 0 1 0" >
-        </feColorMatrix>
-        <feComponentTransfer color-interpolation-filters="sRGB" result="duotone">
-          <feFuncR type="table" tableValues="0.3529411764 0.8588235294"></feFuncR>
-          <feFuncG type="table" tableValues="0.1568627451 0.5568627451"></feFuncG>
-          <feFuncB type="table" tableValues="0.4980392216 0.2"></feFuncB>
-          <feFuncA type="table" tableValues="0 1"></feFuncA>
-        </feComponentTransfer> 
-      <feBlend mode="normal" in="componentTransfer" in2="SourceGraphic" result="blend"/>
-    </filter>
-    <filter id="yurika-blend" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feColorMatrix type="matrix" values=".33 .33 .33 0 0
-        .33 .33 .33 0 0
-        .33 .33 .33 0 0
-        0 0 0 1 0" in="SourceGraphic" result="colormatrix"/>
-        <feComponentTransfer in="colormatrix" result="componentTransfer">
-              <feFuncR type="table" tableValues="0.35 0.81 0.86"/>
-          <feFuncG type="table" tableValues="0.16 0.37 0.56"/>
-          <feFuncB type="table" tableValues="0.5 0.4 0.2"/>
-          <feFuncA type="table" tableValues="0 1"/>
-          </feComponentTransfer>
-        <feBlend mode="normal" in="componentTransfer" in2="SourceGraphic" result="blend"/>
-    </filter>
-    <filter id="blackCurrant-and-mint" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feColorMatrix type="matrix" values=".33 .33 .33 0 0
-        .33 .33 .33 0 0
-        .33 .33 .33 0 0
-        0 0 0 1 0" in="SourceGraphic" result="colormatrix"/>
-      <feComponentTransfer in="colormatrix" result="componentTransfer">
-        <feFuncR type="table" tableValues="0.75 0.53"/>
-        <feFuncG type="table" tableValues="0.25 0.97"/>
-        <feFuncB type="table" tableValues="0.64 0.77"/>
-        <feFuncA type="table" tableValues="0 1"/>
-      </feComponentTransfer>
-      <feBlend mode="normal" in="componentTransfer" in2="SourceGraphic" result="blend"/>
-    </filter>
-    <filter id="purple-sepia" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feColorMatrix type="matrix" values=".33 .33 .33 0 0
-        .33 .33 .33 0 0
-        .33 .33 .33 0 0
-        0 0 0 1 0" in="SourceGraphic" result="colormatrix"/>
-      <feComponentTransfer in="colormatrix" result="componentTransfer">
-        <feFuncR type="table" tableValues="0.43 0.97"/>
-        <feFuncG type="table" tableValues="0.06 0.88"/>
-        <feFuncB type="table" tableValues="0.37 0.79"/>
-        <feFuncA type="table" tableValues="0 1"/>
-      </feComponentTransfer>
-      <feBlend mode="normal" in="componentTransfer" in2="SourceGraphic" result="blend"/>
-    </filter>
-    <svg xmlns="http://www.w3.org/2000/svg">
-    <filter id="purple-hue">
-      <feColorMatrix
-        type="matrix"
-        values=" 1.000  0.400  0.000  0.000  0.100 
-                 0.000  1.000  0.000  0.000  0.000 
-                 0.000  1.000  1.000  0.000  0.700 
-                 0.000  0.000  0.000  1.000  0.000">
-      </feColorMatrix>
-    </filter>
-  </defs>
-</svg>
   <div class="mega-menu__container container">
     <div class="mega-menu__content">
         <?php 
@@ -127,7 +59,7 @@ echo "-->";*/
         $item = &$i['item'];
         $href = !empty($item->url) ? $item->url : '';
         $title = apply_filters('the_title', $item->title, $item->ID);
-        if(count($i['children']) == 0) continue;
+        //if(count($i['children']) == 0) continue;
         $id = $item->ID;
         $custom_id = get_field('target_menu_id', $item);
         if($custom_id) $id = $custom_id;
