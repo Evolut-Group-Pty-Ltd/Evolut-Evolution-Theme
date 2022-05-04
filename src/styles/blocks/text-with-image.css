@@ -165,8 +165,9 @@
     padding-bottom: 60px;
   }
   .text-with-image__sub-title.heading-large {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 20px;
   }
 }
 
