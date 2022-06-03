@@ -151,6 +151,10 @@
 
 /* Block specific CSS */
 
+#hubspot-lp .text-with-image__btn {
+    background-color: #FF7A59;
+}
+
 #hubspot-lp .text-with-image__sub-title.heading-large {
     font-size: 66px;
     line-height: 1.2;
