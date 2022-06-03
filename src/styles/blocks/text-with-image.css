@@ -161,6 +161,16 @@
     transition: background-color 300ms ease-in-out;
 }
 
+#hubspot-reverse .text-with-image__btn {
+    background-color: #4C2346;
+    transition: background-color 300ms ease-in-out;
+}
+
+#hubspot-reverse .text-with-image__btn:hover {
+    background-color: #FF7A59;
+    transition: background-color 300ms ease-in-out;
+}
+
 #hubspot-lp .text-with-image__sub-title.heading-large {
     font-size: 66px;
     line-height: 1.2;
