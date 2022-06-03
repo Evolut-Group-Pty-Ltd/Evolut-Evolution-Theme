@@ -153,12 +153,12 @@
 
 #hubspot-lp .text-with-image__btn {
     background-color: #FF7A59;
-    transition: background-color 700ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
 }
 
 #hubspot-lp .text-with-image__btn:hover {
     background-color: #4C2346;
-    transition: background-color 700ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
 }
 
 #hubspot-lp .text-with-image__sub-title.heading-large {
