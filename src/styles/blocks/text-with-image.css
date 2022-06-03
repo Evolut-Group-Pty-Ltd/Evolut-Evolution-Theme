@@ -162,12 +162,14 @@
 }
 
 #hubspot-reverse .text-with-image__btn {
+    color: white;
     background-color: #4C2346;
     transition: background-color 300ms ease-in-out;
 }
 
 #hubspot-reverse .text-with-image__btn:hover {
-    background-color: #FF7A59;
+    color: #4C2346;
+    background-color: white;
     transition: background-color 300ms ease-in-out;
 }
 
