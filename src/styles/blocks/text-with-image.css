@@ -156,6 +156,13 @@
     line-height: 1.2;
 }
 
+@media (max-width: 1600px) {
+  #hubspot-lp .text-with-image__sub-title.heading-large {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+}
+
 #hero-image {
   margin-bottom: -100px;
 }
