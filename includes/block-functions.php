@@ -7,7 +7,8 @@ function get_colour($acf_field, $block_colours) {
      // Change these to match your color class (gutenberg) and hex codes (acf)
        "purple"       => "#711ecf",
        "orange"       => "#00aeef",
-       "coral"        => "#e235e5",
+       "hubspot"       => "#ff7a59",
+       "coral"        => "#b551ac",
        "dark-grey"    => "#191b1c",
        "mid-grey"    => "#1f2122",
        "black"        => "#000000",

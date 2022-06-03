@@ -263,6 +263,7 @@
 .has-purple-heading-tag-color h6 { color: var(--primary-purple-color); }
 .has-orange-heading-tag-color h6 { color: var(--primary-orange-color); }
 .has-coral-heading-tag-color h6 { color: var(--primary-coral-color); }
+.has-hubspot-heading-tag-color h6 { color: var(--primary-hubspot-color); }
 .has-dark-grey-heading-tag-color h6 { color: var(--primary-dark-grey-color); }
 .has-mid-grey-heading-tag-color h6 { color: var(--primary-mid-grey-color); }
 .has-light-purple-heading-tag-color h6 { color: var(--secondary-light-purple-color); }
@@ -275,6 +276,7 @@
 .has-purple-title-color h2 { color: var(--primary-purple-color); }
 .has-orange-title-color h2 { color: var(--primary-orange-color); }
 .has-coral-title-color h2 { color: var(--primary-coral-color); }
+.has-hubspot-title-color h2 { color: var(--primary-hubspot-color); }
 .has-dark-grey-title-color h2 { color: var(--primary-dark-grey-color); }
 .has-mid-grey-title-color h2 { color: var(--primary-mid-grey-color); }
 .has-light-purple-title-color h2 { color: var(--secondary-light-purple-color); }
@@ -287,6 +289,7 @@
 .has-purple-subheading-color h3 { color: var(--primary-purple-color); }
 .has-orange-subheading-color h3 { color: var(--primary-orange-color); }
 .has-coral-subheading-color h3 { color: var(--primary-coral-color); }
+.has-hubspot-subheading-color h3 { color: var(--primary-hubspot-color); }
 .has-dark-grey-subheading-color h3 { color: var(--primary-dark-grey-color); }
 .has-mid-grey-subheading-color h3 { color: var(--primary-mid-grey-color); }
 .has-light-purple-subheading-color h3 { color: var(--secondary-light-purple-color); }
@@ -299,6 +302,7 @@
 .has-purple-description-color { color: var(--primary-purple-color); }
 .has-orange-description-color { color: var(--primary-orange-color); }
 .has-coral-description-color { color: var(--primary-coral-color); }
+.has-hubspot-description-color { color: var(--primary-hubspot-color); }
 .has-dark-grey-description-color { color: var(--primary-dark-grey-color); }
 .has-mid-grey-description-color { color: var(--primary-mid-grey-color); }
 .has-light-purple-description-color { color: var(--secondary-light-purple-color); }
@@ -311,6 +315,7 @@
 .has-purple-background-color { background-color: var(--primary-purple-color); }
 .has-orange-background-color { background-color: var(--primary-orange-color); }
 .has-coral-background-color { background-color: var(--primary-coral-color); }
+.has-hubspot-background-color { background-color: var(--primary-hubspot-color); }
 .has-dark-grey-background-color { background-color: var(--primary-dark-grey-color); }
 .has-mid-grey-background-color { background-color: var(--primary-mid-grey-color); }
 .has-light-purple-background-color { background-color: var(--secondary-light-purple-color); }
