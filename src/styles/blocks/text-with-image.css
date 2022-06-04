@@ -59,8 +59,9 @@
 .text-with-image__image {
   width: 100%;
   transition: transform 300ms ease-in-out;
-  transform: scale(0.9);
+  transform: scale(0.95);
   transform-origin: bottom center;
+  opacity: 0;
 }
 
 .text-with-image__image-col {
@@ -109,6 +110,7 @@
 
 .visible-tag--visible .text-with-image__image {
   transform: scale(1);
+  opacity: 1;
 }
 
 /* 1600 and below */
