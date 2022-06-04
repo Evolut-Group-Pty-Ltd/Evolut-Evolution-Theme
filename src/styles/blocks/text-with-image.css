@@ -175,13 +175,13 @@
     transition: background-color 300ms ease-in-out;
 }
 
-#hubspot-lp .text-with-image__sub-title.heading-large {
+#hubspot-lp .text-with-image__sub-title.heading-large, #hubspot-reverse .text-with-image__sub-title.heading-large {
     font-size: 66px;
     line-height: 1.2;
 }
 
 @media (max-width: 1600px) {
-  #hubspot-lp .text-with-image__sub-title.heading-large {
+  #hubspot-lp .text-with-image__sub-title.heading-large, #hubspot-reverse .text-with-image__sub-title.heading-large  {
     font-size: 50px;
     line-height: 1.2;
   }
